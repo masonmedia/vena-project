@@ -36,7 +36,7 @@
       <img class="h-auto w-20" src="./img/vs_logo2.svg" />
     </div>
     <div class="block lg:hidden">
-      <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+      <button id="hamburger" class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
         <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
       </button>
     </div>
@@ -70,15 +70,15 @@
       </div>
     </div>
   </nav>
+  <!-- end nav -->
 
   <main>
       <!-- Banner Two columns -->
-    <div class="flex flex-wrap align-stretch pt-20">
+    <div class="flex flex-wrap align-stretch pt-20 px-10">
       <!-- col 1 text -->
-      <div class="flex flex-col justify-center items-start w-full md:w-1/2 px-15 py-10">
+      <div class="flex flex-col justify-center items-start w-full md:w-1/2 p-10">
         <p class="text-sm font-bold tracking-wide uppercase m-0 vs-green">Microsoft Partner</p>
         <h1 class="text-5xl leading-tight font-serif font-bold my-3">Justo Parturient Pellentesque Ornare</h1>
-        <h2></h2>
         <button class="vs-button-red text-white font-bold text-xl uppercase tracking-wider py-2 px-4 my-5 rounded shadow-lg">
           Get Started
         </button>
@@ -88,7 +88,9 @@
         <img class="h-auto w-full object-cover object-center pt-10" src="/img/vs_graph.webp" />
       </div>
     </div>
+    <!-- end banner -->
 
+    <!-- section 1 text -->
     <div class="flex">
         <div class="w-1/5"></div>
         <div class="w-3/5 flex flex-col justify-center align-center text-center p-10">
@@ -97,15 +99,27 @@
         </div>
         <div class="w-1/5"></div>
       </div>
+      <!-- end section 1 text -->
+
+      <!-- section 2: video -->
+      <div class="flex flex-wrap align-stretch bg-gray-100">
+          <!-- col 1 text -->
+          <div class="flex flex-col justify-center items-start w-full lg:w-1/2 p-20">
+            <h2 class="text-3xl leading-tight font-serif font-bold mb-3">"With Vena, we’ve already cut a month and a half out of our budget process, and we’ll probably cut another month when we do our budget this fall.”</h2>
+            <ul class="mt-3">
+              <li class="font-bold">Margaret Anderson</li>
+              <li>Finance Director, ABC Company</li>
+            </ul>
+          </div>
+          <!-- col 2 image -->
+          <div class="w-full lg:w-1/2 bg-sphere">
+            <img class="h-full w-full object-contain object-center p-10" src="/img/vs_video.png" />
+          </div>
+        </div>
+        <!-- end section 2 -->
 
 
-    <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-      <!-- Replace with your content -->
-      <div class="px-4 py-6 sm:px-0">
-        <div class="border-4 border-dashed border-gray-200 rounded-lg h-96"></div>
-      </div>
-      <!-- /End replace -->
-    </div>
+
   </main>
 </div>
 

@@ -87,6 +87,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /* colors */
+
 .vs-green {
   color: #225D38;
 }
@@ -110,6 +112,13 @@ textarea {
 
 .text-red {
   color: #c34f2e;
+}
+
+/* images */
+
+.bg-sphere {
+  background: url(/img/vs_sphere.webp) center;
+  background-size: cover;
 }
 
 
