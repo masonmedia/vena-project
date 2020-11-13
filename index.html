@@ -31,10 +31,9 @@
   Tailwind UI components require Tailwind CSS v1.8 and the @tailwindcss/ui plugin.
   Read the documentation to get started: https://tailwindui.com/documentation
 -->
-<nav class="flex items-center justify-between flex-wrap bg-light p-6 shadow-lg">
+<nav class="flex items-center justify-between flex-wrap w-full fixed z-10 bg-white p-6 shadow-lg">
     <div class="flex items-center flex-shrink-0 text-gray-700 mr-6">
       <img class="h-auto w-20" src="./img/vs_logo2.svg" />
-      <!-- <span class="font-semibold text-xl tracking-tight">Tailwind CSS</span> -->
     </div>
     <div class="block lg:hidden">
       <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
@@ -73,18 +72,31 @@
   </nav>
 
   <main>
-      <!-- Two columns -->
-<div class="flex flex-wrap align-stretch">
-    <div class="flex flex-col justify-center items-start w-full md:w-1/2 bg-gray-100 h-screen p-5">
-      <p class="text-sm font-bold tracking-wide uppercase m-0 vs-green">Microsoft Partner</p>
-      <h1 class="text-5xl leading-tight font-serif font-bold mt-2 mb-3">Justo Parturient Pellentesque Ornare</h1>
-      <h2></h2>
-      <button class="vs-button-red text-white font-bold text-xl uppercase tracking-wider py-2 px-4 my-5 rounded shadow-lg">
-        Get Started
-      </button>
+      <!-- Banner Two columns -->
+    <div class="flex flex-wrap align-stretch pt-20">
+      <!-- col 1 text -->
+      <div class="flex flex-col justify-center items-start w-full md:w-1/2 px-15 py-10">
+        <p class="text-sm font-bold tracking-wide uppercase m-0 vs-green">Microsoft Partner</p>
+        <h1 class="text-5xl leading-tight font-serif font-bold my-3">Justo Parturient Pellentesque Ornare</h1>
+        <h2></h2>
+        <button class="vs-button-red text-white font-bold text-xl uppercase tracking-wider py-2 px-4 my-5 rounded shadow-lg">
+          Get Started
+        </button>
+      </div>
+      <!-- col 2 image -->
+      <div class="w-full md:w-1/2">
+        <img class="h-auto w-full object-cover object-center pt-10" src="/img/vs_graph.webp" />
+      </div>
     </div>
-    <div class="w-full md:w-1/2 bg-gray-500 h-screen"></div>
-  </div>
+
+    <div class="flex">
+        <div class="w-1/5"></div>
+        <div class="w-3/5 flex flex-col justify-center align-center text-center p-10">
+          <h2 class="text-4xl font-serif font-bold leading-tight my-6">Vivamus sagittis lacus vel augue  laoreet rutrum faucibus dolor auctor.</h2>
+          <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui.</p>
+        </div>
+        <div class="w-1/5"></div>
+      </div>
 
 
     <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
