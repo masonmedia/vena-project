@@ -36,35 +36,34 @@
       <img class="h-auto w-20" src="./img/vs_logo2.svg" />
     </div>
     <div class="block lg:hidden">
-      <button id="hamburger" class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+      <button id="menuBtn" class="flex items-center px-3 py-2 text-gray-500 hover:text-black focus:outline-none">
         <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
       </button>
     </div>
     <!-- nav collapse -->
-    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+    <div id="menu" class="w-full flex-grow lg:flex lg:items-center lg:w-auto">
       <div class="text-sm lg:flex-grow">
-        <a href="#responsive-header" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 hover:text-gray-300">
+        <a href="#responsive-header" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 hover:text-gray-300 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
           Solutions
         </a>
-        <a href="#responsive-header" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 hover:text-gray-300">
+        <a href="#responsive-header" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
           Customers
         </a>
-        <a href="#responsive-header" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 hover:text-gray-300">
+        <a href="#responsive-header" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
           Partners
         </a>
-        <a href="#responsive-header" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 hover:text-gray-300">
+        <a href="#responsive-header" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
           Resources
         </a>
-        <a href="#responsive-header" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 hover:text-gray-300">
+        <a href="#responsive-header" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
           Events
         </a>
-        <a href="#responsive-header" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 hover:text-gray-300">
+        <a href="#responsive-header" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
           About
         </a>
       </div>
       <div>
-        <a href="#" class="inline-block text-sm font-bold text-gray-700 pr-4 py-2 leading-none mt-4 mr-3 lg:mt-0">login</a>
-
+        <a href="#" class="inline-block text-sm font-bold text-gray-700 pr-4 py-2 leading-none mt-4 mr-3 lg:mt-0 lg:hover:text-green-800 ease-in-out transition-colors duration-100">login</a>
         <button class="vs-button-red text-white font-bold text-sm py-2 px-4 rounded">
             REQUEST DEMO
           </button>
@@ -137,17 +136,17 @@
 
     <!-- section 1 text -->
     <div class="flex py-10 min-h-full">
-        <div class="w-1/5"></div>
-        <div class="w-3/5 flex flex-col justify-center align-center text-center p-10">
-          <h2 class="text-4xl font-serif font-bold leading-tight my-6">Vivamus sagittis lacus vel augue  laoreet rutrum faucibus dolor auctor.</h2>
+        <!-- <div class="w-1/5"></div> -->
+        <div class="mx-auto w-full md:w-4/5 lg:w-3/5 xl:w-3/5 flex flex-col justify-center align-center text-center p-10">
+          <h2 class="text-3xl md:text-4xl font-serif font-bold leading-tight my-6">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</h2>
           <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui.</p>
         </div>
-        <div class="w-1/5"></div>
+        <!-- <div class="w-1/5"></div> -->
       </div>
       <!-- end section 1 text -->
 
       <!-- section 2: video -->
-      <div class="flex flex-wrap align-stretch bg-gray-200 bg-opacity-75 bg-no-repeat bg-right" style="background-image: url('/img/vs_sphere2.png'); background-size: 60%">
+      <div class="flex flex-wrap align-stretch bg-gray-200 bg-opacity-75 bg-no-repeat bg-right py-16" style="background-image: url('/img/vs_sphere2.png'); background-size: 60%">
           <!-- col 1 text -->
           <div class="flex flex-col justify-center items-start w-full lg:w-1/2 p-20">
             <h2 class="text-2xl leading-normal font-serif font-bold mb-3">"With Vena, we’ve already cut a month and a half out of our budget process, and we’ll probably cut another month when we do our budget this fall.”</h2>
@@ -157,7 +156,7 @@
             </ul>
           </div>
           <!-- col 2 image -->
-          <div class="w-full lg:w-1/2 bg-fixed bg-contain bg-repeat-round p-10">
+          <div class="w-full lg:w-1/2 flex justify-center items-center bg-fixed bg-contain bg-repeat-round p-8">
             <img class="h-auto w-full object-cover object-center shadow-xl" src="/img/vs_video.png" />
           </div>
         </div>
@@ -173,6 +172,24 @@
           <div class="w-1/5"></div>
         </div>
         <!-- end section 3 text -->
+
+        <!-- section 4: carousel -->
+      <div class="flex flex-wrap align-stretch bg-gray-200 bg-opacity-75 bg-no-repeat bg-right" style="background-image: url('/img/vs_sphere2.png'); background-size: 60%">
+        <!-- col 1 text -->
+        <div class="flex flex-col justify-center items-start w-full lg:w-1/2 p-20">
+          <h2 class="text-xl leading-normal font-serif font-black my-3">Past</h2>
+          <p>Understand and analyze your past with features like Financial Close Management, Consolidations, Tax Provisioning, Account Reconciliation, Allocations, and Intercompany Transactions.</p>
+          <h2 class="text-2xl leading-normal font-serif font-hairline my-3">Present</h2>
+          <p>Position yourself for success in the present with Regulatory Reporting, Financial Reporting, Management Dashboards, and Variance Analysis.</p>
+          <h2 class="text-2xl leading-normal font-serif font-bold my-3">Future</h2>
+          <p>Forge the future of your business with advanced budgeting, planning, forecasting, and scenario modeling.</p>
+        </div>
+        <!-- col 2 image -->
+        <div class="w-full lg:w-1/2 flex justify-center items-center bg-fixed bg-contain bg-repeat-round p-10">
+          <img class="h-auto w-full object-cover object-center shadow-xl" src="/img/vs_video.png" />
+        </div>
+      </div>
+      <!-- end section 4 -->
 
 
 

@@ -1,3 +1,23 @@
+// nav toggle
+// function navToggle() {
+//     var btn = document.getElementById('menuBtn');
+//     var nav = document.getElementById('menu');
+
+//     btn.classList.toggle('open');
+//     nav.classList.toggle('flex');
+//     nav.classList.toggle('hidden');
+// }
+
+// navToggle();
+
+const btn = document.getElementById('menuBtn');
+const nav = document.getElementById('menu');
+
+menuBtn.addEventListener('click', function() {
+    nav.classList.toggle('hidden');
+})
+
+// modal
 var openmodal = document.querySelectorAll('.modal-open')
     for (var i = 0; i < openmodal.length; i++) {
       openmodal[i].addEventListener('click', function(event){
