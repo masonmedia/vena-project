@@ -55,3 +55,25 @@ var openmodal = document.querySelectorAll('.modal-open')
       modal.classList.toggle('pointer-events-none')
       body.classList.toggle('modal-active')
     }
+
+    // swiper init
+    // const swiper = new Swiper();
+
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        hashNavigation: {
+          watchState: true,
+        },
+        autoplay: {
+            delay: 3000,
+          },
+          loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });

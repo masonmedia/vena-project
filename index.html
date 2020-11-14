@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css">
-
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="/css/main.css">
@@ -135,13 +135,11 @@
     <!-- end banner -->
 
     <!-- section 1 text -->
-    <div class="flex py-10 min-h-full">
-        <!-- <div class="w-1/5"></div> -->
+    <div class="flex py-20 min-h-full">
         <div class="mx-auto w-full md:w-4/5 lg:w-3/5 xl:w-3/5 flex flex-col justify-center align-center text-center p-10">
           <h2 class="text-3xl md:text-4xl font-serif font-bold leading-tight my-6">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</h2>
           <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui.</p>
         </div>
-        <!-- <div class="w-1/5"></div> -->
       </div>
       <!-- end section 1 text -->
 
@@ -162,31 +160,72 @@
         </div>
         <!-- end section 2 -->
 
-        <!-- section 3 text -->
-        <div class="flex py-10 min-h-full">
-          <div class="w-1/5"></div>
-          <div class="w-3/5 flex flex-col justify-center align-center text-center p-10">
+        <!-- section 3: data into a direction -->
+        <!-- <div class="flex pt-10 min-h-full">
+          <div class="mx-auto w-full md:w-4/5 lg:w-3/5 xl:w-3/5 flex flex-col justify-center align-center text-center p-10">
             <h2 class="text-4xl font-serif font-bold leading-tight my-6">Turn Your Data Into a Direction.</h2>
             <p>We help your team understand your business’s shared past, present, and future so you can move forward with your shared vision.</p>
           </div>
-          <div class="w-1/5"></div>
-        </div>
+        </div> -->
         <!-- end section 3 text -->
 
-        <!-- section 4: carousel -->
-      <div class="flex flex-wrap align-stretch bg-gray-200 bg-opacity-75 bg-no-repeat bg-right" style="background-image: url('/img/vs_sphere2.png'); background-size: 60%">
+        <!-- section 4 -->
+      <div class="flex flex-wrap align-stretch p-10">
+        <!-- col full intro text -->
+          <div class="mx-auto w-full md:w-4/5 lg:w-3/5 xl:w-3/5 flex flex-col justify-center align-center text-center p-10">
+            <h2 class="text-4xl font-serif font-bold leading-tight my-6">Turn Your Data Into a Direction.</h2>
+            <p>We help your team understand your business’s shared past, present, and future so you can move forward with your shared vision.</p>
+          </div>
         <!-- col 1 text -->
-        <div class="flex flex-col justify-center items-start w-full lg:w-1/2 p-20">
+        <div class="w-full lg:w-1/2 flex flex-col justify-center items-start  p-10">
           <h2 class="text-xl leading-normal font-serif font-black my-3">Past</h2>
           <p>Understand and analyze your past with features like Financial Close Management, Consolidations, Tax Provisioning, Account Reconciliation, Allocations, and Intercompany Transactions.</p>
+          <a href="#slide1">
+            <button class="vs-button-red text-white font-bold text-sm py-2 px-4 rounded shadow">
+              slide
+            </button>
+          </a>
+
           <h2 class="text-2xl leading-normal font-serif font-hairline my-3">Present</h2>
           <p>Position yourself for success in the present with Regulatory Reporting, Financial Reporting, Management Dashboards, and Variance Analysis.</p>
+          <a href="#slide2">
+              <button class="vs-button-red text-white font-bold text-sm py-2 px-4 rounded shadow">
+                slide
+              </button>
+            </a>
           <h2 class="text-2xl leading-normal font-serif font-bold my-3">Future</h2>
           <p>Forge the future of your business with advanced budgeting, planning, forecasting, and scenario modeling.</p>
+          <a href="#slide3">
+              <button class="vs-button-red text-white font-bold text-sm py-2 px-4 rounded shadow">
+                slide
+              </button>
+            </a>
         </div>
-        <!-- col 2 image -->
-        <div class="w-full lg:w-1/2 flex justify-center items-center bg-fixed bg-contain bg-repeat-round p-10">
-          <img class="h-auto w-full object-cover object-center shadow-xl" src="/img/vs_video.png" />
+        <!-- col 2 carousel -->
+        <div class="w-full lg:w-1/2 flex justify-center items-center py-8 px-3">
+          <!-- Swiper -->
+          <div class="swiper-container rounded shadow-xl">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" data-hash="slide1">
+                <img class="w-full h-screen object-cover object-center" src="/img/vs_slide1.jpeg" />
+              </div>
+              <div class="swiper-slide" data-hash="slide2">
+                <img class="w-full h-screen object-cover object-center" src="/img/vs_slide2.jpeg" />
+              </div>
+              <div class="swiper-slide" data-hash="slide3">
+                <img class="w-full h-screen object-cover object-center" src="/img/vs_slide3.jpeg" />
+              </div>
+              <div class="swiper-slide" data-hash="slide4">
+                <img class="w-full h-screen object-cover object-center" src="/img/vs_slide4.jpeg" />
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+            <!-- Add Arrows -->
+            <!-- <div class="swiper-button-next"></div> -->
+            <!-- <div class="swiper-button-prev"></div> -->
+          </div>
+          <!-- end swiper -->
         </div>
       </div>
       <!-- end section 4 -->
@@ -197,9 +236,8 @@
 </div>
 
 
-
-
-
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
