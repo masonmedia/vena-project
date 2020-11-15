@@ -64,10 +64,11 @@ var openmodal = document.querySelectorAll('.modal-open')
         hashNavigation: {
           watchState: true,
         },
-        autoplay: {
-            delay: 3000,
-          },
+        // autoplay: {
+        //     delay: 4000,
+        //   },
           loop: true,
+        //   effect: 'fade',
         pagination: {
           el: '.swiper-pagination',
           clickable: true,

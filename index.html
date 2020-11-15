@@ -31,7 +31,8 @@
   Tailwind UI components require Tailwind CSS v1.8 and the @tailwindcss/ui plugin.
   Read the documentation to get started: https://tailwindui.com/documentation
 -->
-<nav class="flex items-center justify-between flex-wrap w-full fixed z-10 bg-white p-6 shadow-lg">
+<div class="fixed z-10 w-full">
+<nav class="flex flex-wrap items-center justify-between flex-wrap w-full bg-white p-6 shadow-lg">
     <div class="flex items-center flex-shrink-0 text-gray-700 mr-6">
       <img class="h-auto w-20" src="./img/vs_logo2.svg" />
     </div>
@@ -69,13 +70,20 @@
           </button>
       </div>
     </div>
-  </nav>
+  </nav>  
   <!-- end nav -->
-
+  <!-- breadcrums -->
+  <div class="bg-gray-100 text-green-500 px-4 py-3 relative w-full text-sm font-hairline shadow-lg" role="alert">
+    <p class="font-bold">Home > Solutions > Projects</p>
+  </div>
+</div>
+    
   <main>
     <!-- Banner Two columns -->
     <div class="flex flex-wrap align-stretch pt-20 px-10 bg-cover bg-fixed"
     style="background-image: url('/img/vs_wave.webp')">
+    <!-- spacer -->
+    <div class="w-full mt-10"></div>
       <!-- col 1 text -->
       <div class="flex flex-col justify-center items-start w-full lg:w-1/2 p-10">
         <p class="text-sm font-bold tracking-wide uppercase mb-0 mt-10 vs-green">Microsoft Partner</p>
@@ -154,7 +162,7 @@
             </ul>
           </div>
           <!-- col 2 image -->
-          <div class="w-full lg:w-1/2 flex justify-center items-center bg-fixed bg-contain bg-repeat-round p-8">
+          <div class="w-full lg:w-1/2 flex justify-center items-center p-8">
             <img class="h-auto w-full object-cover object-center shadow-xl" src="/img/vs_video.png" />
           </div>
         </div>
@@ -178,15 +186,14 @@
           </div>
         <!-- col 1 text -->
         <div class="w-full lg:w-1/2 flex flex-col justify-center items-start  p-10">
-          <h2 class="text-xl leading-normal font-serif font-black my-3">Past</h2>
+          <h2 class="text-2xl leading-normal font-serif font-black my-3">Past</h2>
           <p>Understand and analyze your past with features like Financial Close Management, Consolidations, Tax Provisioning, Account Reconciliation, Allocations, and Intercompany Transactions.</p>
           <a href="#slide1">
             <button class="vs-button-red text-white font-bold text-sm py-2 px-4 rounded shadow">
               slide
             </button>
           </a>
-
-          <h2 class="text-2xl leading-normal font-serif font-hairline my-3">Present</h2>
+          <h2 class="text-2xl leading-normal font-serif font-black my-3">Present</h2>
           <p>Position yourself for success in the present with Regulatory Reporting, Financial Reporting, Management Dashboards, and Variance Analysis.</p>
           <a href="#slide2">
               <button class="vs-button-red text-white font-bold text-sm py-2 px-4 rounded shadow">
@@ -229,6 +236,24 @@
         </div>
       </div>
       <!-- end section 4 -->
+
+      <!-- section 5 -->
+      <div class="flex flex-wrap align-stretch bg-gray-100 bg-opacity-50 bg-no-repeat bg-right py-5" style="background-image: url('/img/vs_sphere2.png'); background-size: 60%">
+        <!-- col 1 image -->
+        <div class="w-full lg:w-1/2 flex justify-center items-center p-8">
+          <img class="h-auto w-full object-cover object-center" src="/img/vs_flow.webp" />
+        </div>
+        <!-- col 2 text -->
+        <div class="flex flex-col justify-center items-start w-full lg:w-1/2 p-20">
+          <p class="text-sm font-bold tracking-wide uppercase mb-0 mt-10 vs-green">Risus Quam</p>
+          <h1 class="text-4xl leading-tight font-serif font-bold mb-5 mt-3">Consectetur purus sit amet fermentum.</h1>
+          <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. </p>
+        </div>
+      </div>
+      <!-- end section 5 -->
+
+      <div class="divide-y-2 w-3/4 mx-auto"></div>
+
 
 
 
