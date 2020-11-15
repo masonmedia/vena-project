@@ -138,6 +138,13 @@ textarea {
     overflow-y: visible !important;
   }
 
+  /* text */
+
+  footer ul li {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+
   /* text effects */
 
   .drop-shadow-light {
