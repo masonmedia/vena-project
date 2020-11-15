@@ -101,6 +101,13 @@ textarea {
   background: #c34f2e;
   border: 1px solid #c34f2e;
 }
+
+.vs-button-red-outline {
+  background: #fff;
+  border: 1px solid #c34f2e;
+  color: #c34f2e; 
+}
+
 .vs-button-red:hover {
   border-color: rgb(149, 60, 35);
   background-color: rgb(149, 60, 35);
