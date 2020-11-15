@@ -1,0 +1,166 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="/css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<!--
+  Tailwind UI components require Tailwind CSS v1.8 and the @tailwindcss/ui plugin.
+  Read the documentation to get started: https://tailwindui.com/documentation
+-->
+<div class="fixed z-10 w-full">
+<nav class="flex flex-wrap items-center justify-between flex-wrap w-full bg-white p-6 shadow-lg">
+    <div class="flex items-center flex-shrink-0 text-gray-700 mr-6 cursor-pointer">
+        <a href="/">
+            <img class="h-auto w-20" src="./img/vs_logo2.svg" />
+        </a>
+    </div>
+    <div class="block lg:hidden">
+      <button id="menuBtn" class="flex items-center px-3 py-2 text-gray-500 hover:text-black focus:outline-none">
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+      </button>
+    </div>
+    <!-- nav collapse -->
+    <div id="menu" class="w-full flex-grow lg:flex lg:items-center lg:w-auto">
+      <div class="text-sm lg:flex-grow">
+        <a href="/solutions.html" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 hover:text-gray-300 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
+          Solutions
+        </a>
+        <a href="#responsive-header" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
+          Customers
+        </a>
+        <a href="#responsive-header" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
+          Partners
+        </a>
+        <a href="#responsive-header" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
+          Resources
+        </a>
+        <a href="#responsive-header" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
+          Events
+        </a>
+        <a href="#responsive-header" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
+          About
+        </a>
+      </div>
+      <div>
+        <a href="#" class="inline-block text-sm font-bold text-gray-700 pr-4 py-2 leading-none mt-4 mr-3 lg:mt-0 lg:hover:text-green-800 ease-in-out transition-colors duration-100">login</a>
+        <button class="modal-open vs-button-red text-white font-bold text-sm py-2 px-4 rounded">
+            REQUEST DEMO
+          </button>
+      </div>
+    </div>
+  </nav>  
+</div>
+    
+  <main>
+    <!-- Banner Two columns -->
+    <div class="flex flex-wrap align-stretch pt-20 px-10 bg-cover bg-fixed"
+    style="background-image: url('/img/vs_wave.webp')">
+    <!-- spacer -->
+    <div class="w-full mt-10"></div>
+      <!-- col 1 text -->
+      <div class="flex flex-col justify-center items-start w-full lg:w-1/2 p-10">
+        <p class="text-sm font-bold tracking-wide uppercase mb-0 mt-10 vs-green">Microsoft Partner</p>
+        <h1 class="text-5xl leading-tight font-serif font-bold my-3">Justo Parturient Pellentesque Ornare</h1>
+        <button class="modal-open vs-button-red text-white font-bold text-xl uppercase tracking-wider py-2 px-4 my-5 rounded shadow-lg">
+          Get Started
+        </button>
+        <!-- <button class="modal-open bg-transparent border border-gray-500 hover:border-indigo-500 text-gray-500 hover:text-indigo-500 font-bold py-2 px-4 rounded-full">Open Modal</button> -->
+
+
+        <div
+        class="modal2 fixed inset-0 z-50 bg-gray-900 bg-opacity-75 flex items-center justify-center p-3"
+      >
+        <div
+          class="bg-white max-w-lg rounded-lg overflow-hidden px-3 lg:px-6 py-4 space-y-4"
+        >
+          <div class="flex justify-center">
+            <span
+              class="inline-flex items-center bg-red-200 bg-opacity-75 rounded-full p-2"
+            >
+              <svg
+                class="h-10 w-auto text-red-500"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </span>
+          </div>
+          <div class="flex flex-col items-center space-y-2">
+            <h1 class="font-semibold">Payment Fail</h1>
+            <div>
+              <p class="leading-tight text-sm lg:text-base">
+                Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-center pt-4">
+            <button
+            id="menuBtn"
+              type="button"
+              class="modal-close rounded-lg px-5 py-2 border-2 border-gray-300 focus:border-transparent focus:outline-none focus:shadow-outline font-medium"
+            >
+              Dismiss
+            </button>
+          </div>
+        </div>
+      </div>
+    
+  
+       
+      </div>
+      <!-- col 2 image -->
+      <div class="w-full lg:w-1/2">
+        <img class="h-auto w-full object-cover object-center pt-10" src="/img/vs_graph_crop.png" />
+      </div>
+    </div>
+    <!-- end banner -->
+
+  </main>
+</div>
+
+
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

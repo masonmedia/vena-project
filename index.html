@@ -34,7 +34,9 @@
 <div class="fixed z-10 w-full">
 <nav class="flex flex-wrap items-center justify-between flex-wrap w-full bg-white p-6 shadow-lg">
     <div class="flex items-center flex-shrink-0 text-gray-700 mr-6 cursor-pointer">
+      <a href="/">
       <img class="h-auto w-20" src="./img/vs_logo2.svg" />
+      </a>
     </div>
     <div class="block lg:hidden">
       <button id="menuBtn" class="flex items-center px-3 py-2 text-gray-500 hover:text-black focus:outline-none">
@@ -44,7 +46,7 @@
     <!-- nav collapse -->
     <div id="menu" class="w-full flex-grow lg:flex lg:items-center lg:w-auto">
       <div class="text-sm lg:flex-grow">
-        <a href="#responsive-header" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 hover:text-gray-300 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
+        <a href="/solutions.html" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 hover:text-gray-300 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
           Solutions
         </a>
         <a href="#responsive-header" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
@@ -65,7 +67,7 @@
       </div>
       <div>
         <a href="#" class="inline-block text-sm font-bold text-gray-700 pr-4 py-2 leading-none mt-4 mr-3 lg:mt-0 lg:hover:text-green-800 ease-in-out transition-colors duration-100">login</a>
-        <button class="vs-button-red text-white font-bold text-sm py-2 px-4 rounded">
+        <button class="modal-open vs-button-red text-white font-bold text-sm py-2 px-4 rounded">
             REQUEST DEMO
           </button>
       </div>
@@ -93,12 +95,10 @@
       <!-- col 1 text -->
       <div class="flex flex-col justify-center items-start w-full lg:w-1/2 p-10">
         <p class="text-sm font-bold tracking-wide uppercase mb-0 mt-10 vs-green">Microsoft Partner</p>
-        <h1 class="text-5xl leading-tight font-serif font-bold my-3">Justo Parturient Pellentesque Ornare</h1>
+        <h1 class="text-4xl md:text-5xl leading-tight font-serif font-black my-3">Justo Parturient Pellentesque Ornare</h1>
         <button class="modal-open vs-button-red text-white font-bold text-xl uppercase tracking-wider py-2 px-4 my-5 rounded shadow-lg">
           Get Started
         </button>
-        <!-- <button class="modal-open bg-transparent border border-gray-500 hover:border-indigo-500 text-gray-500 hover:text-indigo-500 font-bold py-2 px-4 rounded-full">Open Modal</button> -->
-  
         <!--Banner Modal-->
         <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
           <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
@@ -116,7 +116,7 @@
               style="background-image: url('/img/vs_wave.webp')">
               <!--Title-->
               <div class="flex justify-between items-center pb-2">
-                <p class="text-2xl font-bold">Contact Us!</p>
+                <p class="text-3xl text-gray-600 font-bold font-serif tracking-snug">Contact Us!</p>
                 <div class="modal-close cursor-pointer z-50">
                   <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
                     <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
@@ -139,21 +139,9 @@
                       <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
                         Email
                       </label>
-                      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="email">
-                      <!-- <p class="text-red-500 text-xs italic">Please choose a password.</p> -->
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <!-- <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-                        Submit
-                      </button> -->
-                      <!-- <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
-                        Forgot Password?
-                      </a> -->
+                      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email">
                     </div>
                   </form>
-                  <!-- <p class="text-center text-gray-500 text-xs">
-                    &copy;2020 Acme Corp. All rights reserved.
-                  </p> -->
                 </div>
 
               <!--Modal Footer-->
@@ -175,7 +163,7 @@
     <!-- end banner -->
 
     <!-- section 1 text -->
-    <div class="flex py-20 min-h-full">
+    <div class="flex py-10 md:py-20 min-h-full">
         <div class="mx-auto w-full md:w-4/5 lg:w-3/5 xl:w-3/5 flex flex-col justify-center align-center text-center p-10">
           <h2 class="text-3xl md:text-4xl font-serif font-bold leading-tight my-6">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</h2>
           <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui.</p>
@@ -184,7 +172,7 @@
       <!-- end section 1 text -->
 
       <!-- section 2: video -->
-      <div class="flex flex-wrap align-stretch bg-gray-200 bg-opacity-75 bg-no-repeat bg-right py-16" style="background-image: url('/img/vs_sphere2.png'); background-size: 60%">
+      <div class="flex flex-wrap align-stretch bg-gray-200 bg-opacity-75 bg-no-repeat bg-right py-16 bg-cover md:bg-contain" style="background-image: url('/img/vs_sphere2.png')">
           <!-- col 1 text -->
           <div class="flex flex-col justify-center items-start w-full lg:w-1/2 p-20">
             <h2 class="text-2xl leading-normal font-serif font-bold mb-3">"With Vena, we’ve already cut a month and a half out of our budget process, and we’ll probably cut another month when we do our budget this fall.”</h2>
@@ -195,7 +183,7 @@
           </div>
           <!-- col 2 image -->
           <div class="w-full lg:w-1/2 flex justify-center items-center p-8">
-            <img class="h-auto w-full object-cover object-center shadow-xl" src="/img/vs_video.png" />
+            <img class="h-auto w-full object-cover object-center drop-shadow-med" src="/img/vs_video.png" />
           </div>
         </div>
         <!-- end section 2 -->
@@ -216,8 +204,11 @@
               slide
             </button>
           </a>
+<span class="swiper-pagination-bullet"></span>
           <h2 class="text-2xl leading-normal font-serif font-black my-3">Present</h2>
           <p>Position yourself for success in the present with Regulatory Reporting, Financial Reporting, Management Dashboards, and Variance Analysis.</p>
+
+          <span class="swiper-pagination-bullet"></span>
           <a href="#slide2">
               <button class="vs-button-red text-white font-bold text-sm py-2 px-4 rounded shadow">
                 slide
@@ -234,19 +225,19 @@
         <!-- col 2 carousel -->
         <div class="w-full lg:w-1/2 flex justify-center items-center py-8 px-3">
           <!-- Swiper -->
-          <div class="swiper-container rounded shadow-xl">
+          <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide" data-hash="slide1">
-                <img class="w-full h-screen object-cover object-center" src="/img/vs_slide1.jpeg" />
+                <img class="w-full object-cover object-center drop-shadow-med" src="/img/vs_graph2.webp" />
               </div>
               <div class="swiper-slide" data-hash="slide2">
-                <img class="w-full h-screen object-cover object-center" src="/img/vs_slide2.jpeg" />
+                <img class="w-full object-cover object-center drop-shadow-med" src="/img/vs_payroll.webp" />
               </div>
               <div class="swiper-slide" data-hash="slide3">
-                <img class="w-full h-screen object-cover object-center" src="/img/vs_slide3.jpeg" />
+                <img class="w-full object-cover object-center drop-shadow-med" src="/img/vs_planning.webp" />
               </div>
               <div class="swiper-slide" data-hash="slide4">
-                <img class="w-full h-screen object-cover object-center" src="/img/vs_slide4.jpeg" />
+                <img class="w-full object-cover object-center drop-shadow-med" src="/img/vs_slide4.jpeg" />
               </div>
             </div>
             <!-- Add Pagination -->
@@ -264,10 +255,10 @@
       <div class="flex flex-wrap align-stretch bg-gray-100 bg-opacity-50 bg-cover bg-bottom py-5" style="background-image: url('/img/vs_wave.png');">
         <!-- col 1 image -->
         <div class="w-full lg:w-1/2 flex justify-center items-center p-8">
-          <img class="h-auto w-full object-cover object-center" src="/img/vs_flow.webp" />
+          <img class="h-auto w-full object-cover object-center drop-shadow-med" src="/img/vs_flow.webp" />
         </div>
         <!-- col 2 text -->
-        <div class="flex flex-col justify-center items-start w-full lg:w-1/2 p-20">
+        <div class="flex flex-col justify-center items-start w-full lg:w-1/2 px-20 py-15">
           <p class="text-sm font-bold tracking-wide uppercase mb-0 mt-10 vs-green">Risus Quam</p>
           <h1 class="text-4xl leading-tight font-serif font-bold mb-5 mt-3">Consectetur purus sit amet fermentum.</h1>
           <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. </p>
@@ -278,13 +269,33 @@
       <hr class="bg-gray-100 w-3/4 mx-auto px-10" />
 
       <!-- section 6 partners -->
-      <div class="flex py-15 min-h-full">
+      <div class="flex min-h-full">
         <div class="mx-auto w-full md:w-4/5 lg:w-3/5 xl:w-3/5 flex flex-col justify-center align-center text-center p-10">
           <h2 class="text-3xl md:text-4xl font-serif font-bold leading-tight my-6">Adipiscing Fringilla Mattis Dolor Vulputate.</h2>
-          
-        </div>
+        </div> 
       </div>
       <!-- end section 6 text -->
+
+      <div class="flex flex-wrap">
+          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-center items-center px-15 py-5 md:p-15 lg:p-8">
+            <img class="w-3/4 md:w-full drop-shadow-light" src="/img/vs_cloud.png" alt="">
+          </div>
+          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-center items-center px-20 py-5 md:p-15 lg:p-8">
+            <img class="w-3/4 md:w-full drop-shadow-light" src="/img/vs_fusion.png" alt="">
+          </div>
+          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-center items-center px-20 py-5 md:p-15 lg:p-8">
+            <img class="w-3/4 md:w-full drop-shadow-light" src="/img/vs_nandos.png" alt="">
+          </div>
+          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-center items-center px-20 py-5 md:p-15 lg:p-8">
+            <img class="w-3/4 md:w-full drop-shadow-light" src="/img/vs_brookfield.png" alt="">
+          </div>
+          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-center items-center px-20 py-5 md:p-15 lg:p-8">
+            <img class="w-3/4 md:w-full drop-shadow-light" src="/img/vs_roxgold.png" alt="">
+          </div>
+          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-center items-center px-20 py-5 md:p-15 lg:p-8">
+            <img class="w-3/4 md:w-full drop-shadow-light" src="/img/vs_paylocity.png" alt="">
+          </div>
+      </div>
 
 
 

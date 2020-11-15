@@ -67,6 +67,7 @@ var openmodal = document.querySelectorAll('.modal-open')
         // autoplay: {
         //     delay: 4000,
         //   },
+        speed: 800,
           loop: true,
         //   effect: 'fade',
         pagination: {
