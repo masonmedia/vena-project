@@ -88,78 +88,80 @@
     
   <main>
     <!-- Banner Two columns -->
-    <div class="flex flex-wrap align-stretch pt-20 px-10 bg-cover bg-fixed"
-    style="background-image: url('/img/vs_wave.webp')">
-    <!-- spacer -->
-    <div class="w-full mt-10"></div>
-      <!-- col 1 text -->
-      <div class="flex flex-col justify-center items-start w-full lg:w-1/2 p-10">
-        <p class="text-sm font-bold tracking-wide uppercase mb-0 mt-10 vs-green">Microsoft Partner</p>
-        <h1 class="text-4xl md:text-5xl leading-tight font-serif font-black my-3">Justo Parturient Pellentesque Ornare</h1>
-        <button class="modal-open vs-button-red text-white font-bold text-xl uppercase tracking-wider py-2 px-4 my-5 rounded shadow-lg">
-          Get Started
-        </button>
-        <!--Banner Modal-->
-        <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
-          <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
-          
-          <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    <section role="banner">
+      <div class="flex flex-wrap align-stretch pt-20 px-10 bg-cover bg-fixed"
+      style="background-image: url('/img/vs_wave.webp')">
+      <!-- spacer -->
+      <div class="w-full mt-10"></div>
+        <!-- col 1 text -->
+        <div class="flex flex-col justify-center items-start w-full lg:w-1/2 p-10">
+          <p class="text-sm font-bold tracking-wide uppercase mb-0 mt-10 vs-green">Microsoft Partner</p>
+          <h1 class="text-4xl md:text-5xl leading-tight font-serif font-black my-3">Justo Parturient Pellentesque Ornare</h1>
+          <button class="modal-open vs-button-red text-white font-bold text-xl uppercase tracking-wider py-2 px-4 my-5 rounded shadow-lg">
+            Get Started
+          </button>
+          <!--Banner Modal-->
+          <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
+            <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
             
-            <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-              <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-              </svg>
-              <span class="text-sm">(Esc)</span>
-            </div>
-            <!-- modal text -->
-            <div class="modal-content py-4 text-left px-6 bg-cover"
-              style="background-image: url('/img/vs_wave.webp')">
-              <!--Title-->
-              <div class="flex justify-between items-center pb-2">
-                <p class="text-3xl text-gray-600 font-bold font-serif tracking-snug">Contact Us!</p>
-                <div class="modal-close cursor-pointer z-50">
-                  <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                    <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
-                  </svg>
-                </div>
-              </div>
-
-              <!--Modal Body-->
+            <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
               
-              <!-- form -->
-              <div class="w-full">
-                  <form class="px-2 pt-6 pb-2">
-                    <div class="mb-4">
-                      <label class="block text-gray-700 text-sm font-bold mb-2" for="Name">
-                        Name
-                      </label>
-                      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="Name" type="text" placeholder="Name">
-                    </div>
-                    <div class="mb-6">
-                      <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
-                        Email
-                      </label>
-                      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email">
-                    </div>
-                  </form>
+              <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+                <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                  <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+                </svg>
+                <span class="text-sm">(Esc)</span>
+              </div>
+              <!-- modal text -->
+              <div class="modal-content py-4 text-left px-6 bg-cover"
+                style="background-image: url('/img/vs_wave.webp')">
+                <!--Title-->
+                <div class="flex justify-between items-center pb-2">
+                  <p class="text-3xl text-gray-600 font-bold font-serif tracking-snug">Contact Us!</p>
+                  <div class="modal-close cursor-pointer z-50">
+                    <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                      <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+                    </svg>
+                  </div>
                 </div>
 
-              <!--Modal Footer-->
-              <div class="flex justify-end pt-2">
-                <button class="px-4 bg-transparent border border-green-600 p-3 rounded-lg text-green-600 hover:text-green-100 hover:bg-green-600 mr-2">Submit</button>
-                <button class="modal-close px-4 bg-green-600 p-3 rounded-lg text-white hover:bg-green-500">Close</button>
+                <!--Modal Body-->
+                
+                <!-- form -->
+                <div class="w-full">
+                    <form class="px-2 pt-6 pb-2">
+                      <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="Name">
+                          Name
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="Name" type="text" placeholder="Name">
+                      </div>
+                      <div class="mb-6">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                          Email
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email">
+                      </div>
+                    </form>
+                  </div>
+
+                <!--Modal Footer-->
+                <div class="flex justify-end pt-2">
+                  <button class="px-4 bg-transparent border border-green-600 p-3 rounded-lg text-green-600 hover:text-green-100 hover:bg-green-600 mr-2">Submit</button>
+                  <button class="modal-close px-4 bg-green-600 p-3 rounded-lg text-white hover:bg-green-500">Close</button>
+                </div>
+                <!-- end modal footer -->
               </div>
-              <!-- end modal footer -->
             </div>
           </div>
+          <!-- end modal -->
         </div>
-        <!-- end modal -->
+        <!-- col 2 image -->
+        <div class="w-full lg:w-1/2">
+          <img class="h-auto w-full object-cover object-center pt-10" src="/img/vs_graph_crop.png" />
+        </div>
       </div>
-      <!-- col 2 image -->
-      <div class="w-full lg:w-1/2">
-        <img class="h-auto w-full object-cover object-center pt-10" src="/img/vs_graph_crop.png" />
-      </div>
-    </div>
+    </section>
     <!-- end banner -->
 
     <!-- section 1 text -->
@@ -171,119 +173,168 @@
       </div>
       <!-- end section 1 text -->
 
-      <!-- section 2: video -->
-      <div class="flex flex-wrap align-stretch bg-gray-100 bg-no-repeat bg-fixed bg-right py-16" style="background-image: url('/img/vs_sphere2.png'); background-size: 65%">
-          <!-- col 1 text -->
-          <div class="flex flex-col justify-center items-start w-full lg:w-1/2 p-20">
-            <h2 class="text-2xl leading-normal font-serif font-bold mb-3">"With Vena, we’ve already cut a month and a half out of our budget process, and we’ll probably cut another month when we do our budget this fall.”</h2>
-            <ul class="mt-3">
-              <li class="font-bold">Margaret Anderson</li>
-              <li>Finance Director, ABC Company</li>
-            </ul>
+        <!-- section 2: video -->
+        <section>
+          <div class="flex flex-wrap align-stretch bg-gray-100 bg-no-repeat bg-fixed bg-right py-16" style="background-image: url('/img/vs_sphere2.png'); background-size: 65%">
+            <!-- col 1 text -->
+            <div class="flex flex-col justify-center items-start w-full lg:w-1/2 p-20">
+              <h2 class="text-2xl leading-normal font-serif font-bold mb-3">"With Vena, we’ve already cut a month and a half out of our budget process, and we’ll probably cut another month when we do our budget this fall.”</h2>
+              <ul class="mt-3">
+                <li class="font-bold">Margaret Anderson</li>
+                <li>Finance Director, ABC Company</li>
+              </ul>
+            </div>
+            <!-- col 2 image -->
+            <div class="w-full lg:w-1/2 flex justify-center items-center p-8">
+              <img class="h-auto w-full object-cover object-center drop-shadow-med" src="/img/vs_video.png" />
+            </div>
           </div>
-          <!-- col 2 image -->
-          <div class="w-full lg:w-1/2 flex justify-center items-center p-8">
-            <img class="h-auto w-full object-cover object-center drop-shadow-med" src="/img/vs_video.png" />
-          </div>
-        </div>
+        </section>
         <!-- end section 2 -->
 
         <!-- section 3 -->
-      <div class="flex flex-wrap align-stretch p-10">
-        <!-- col full intro text -->
-          <div class="mx-auto w-full md:w-4/5 lg:w-3/5 xl:w-3/5 flex flex-col justify-center align-center text-center p-10">
-            <h2 class="text-4xl font-serif font-bold leading-tight my-6">Turn Your Data Into a Direction.</h2>
-            <p>We help your team understand your business’s shared past, present, and future so you can move forward with your shared vision.</p>
-          </div>
-        <!-- col 1 text -->
-        <div class="w-full lg:w-1/2 flex flex-col justify-center items-start  p-10">
-          <h2 class="text-2xl leading-normal font-serif font-black my-3">Past</h2>
-          <p>Understand and analyze your past with features like Financial Close Management, Consolidations, Tax Provisioning, Account Reconciliation, Allocations, and Intercompany Transactions.</p>
-          <a href="#slide1">
-            <button class="vs-button-red text-white font-bold text-sm py-2 px-4 rounded shadow">
-              slide
-            </button>
-          </a>
-          <span class="swiper-pagination-bullet"></span>
-          <h2 class="text-2xl leading-normal font-serif font-black my-3">Present</h2>
-          <p>Position yourself for success in the present with Regulatory Reporting, Financial Reporting, Management Dashboards, and Variance Analysis.</p>
-
-          <span class="swiper-pagination-bullet"></span>
-          <a href="#slide2">
-              <button class="vs-button-red text-white font-bold text-sm py-2 px-4 rounded shadow">
-                slide
-              </button>
-            </a>
-          <h2 class="text-2xl leading-normal font-serif font-bold my-3">Future</h2>
-          <p>Forge the future of your business with advanced budgeting, planning, forecasting, and scenario modeling.</p>
-          <a href="#slide3">
-              <button class="vs-button-red text-white font-bold text-sm py-2 px-4 rounded shadow">
-                slide
-              </button>
-            </a>
-        </div>
-        <!-- col 2 carousel -->
-        <div class="w-full lg:w-1/2 flex justify-center items-center py-8 px-3">
-          <!-- Swiper -->
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide" data-hash="slide1">
-                <img class="w-full object-cover object-center drop-shadow-med" src="/img/vs_graph2.webp" />
-              </div>
-              <div class="swiper-slide" data-hash="slide2">
-                <img class="w-full object-cover object-center drop-shadow-med" src="/img/vs_payroll.webp" />
-              </div>
-              <div class="swiper-slide" data-hash="slide3">
-                <img class="w-full object-cover object-center drop-shadow-med" src="/img/vs_planning.webp" />
-              </div>
-              <div class="swiper-slide" data-hash="slide4">
-                <img class="w-full object-cover object-center drop-shadow-med" src="/img/vs_slide4.jpeg" />
-              </div>
+        <section>
+          <div class="flex flex-wrap align-stretch p-10">
+          <!-- col full intro text -->
+            <div class="mx-auto w-full md:w-4/5 lg:w-3/5 xl:w-3/5 flex flex-col justify-center align-center text-center p-10">
+              <h2 class="text-4xl font-serif font-bold leading-tight my-6">Turn Your Data Into a Direction.</h2>
+              <p>We help your team understand your business’s shared past, present, and future so you can move forward with your shared vision.</p>
             </div>
-            <!-- Add Pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
-            <!-- Add Arrows -->
-            <!-- <div class="swiper-button-next"></div> -->
-            <!-- <div class="swiper-button-prev"></div> -->
+          <!-- col 1 text -->
+          <div class="w-full lg:w-1/2 flex flex-col justify-center items-start  p-10">
+            <h2 class="text-2xl leading-normal font-serif font-black my-3">Past</h2>
+            <p>Understand and analyze your past with features like Financial Close Management, Consolidations, Tax Provisioning, Account Reconciliation, Allocations, and Intercompany Transactions.</p>
+            <a href="#slide1">
+              <button class="vs-button-red text-white font-bold text-sm py-2 px-4 rounded shadow">
+                slide
+              </button>
+            </a>
+            <span class="swiper-pagination-bullet"></span>
+            <h2 class="text-2xl leading-normal font-serif font-black my-3">Present</h2>
+            <p>Position yourself for success in the present with Regulatory Reporting, Financial Reporting, Management Dashboards, and Variance Analysis.</p>
+
+            <span class="swiper-pagination-bullet"></span>
+            <a href="#slide2">
+                <button class="vs-button-red text-white font-bold text-sm py-2 px-4 rounded shadow">
+                  slide
+                </button>
+              </a>
+            <h2 class="text-2xl leading-normal font-serif font-bold my-3">Future</h2>
+            <p>Forge the future of your business with advanced budgeting, planning, forecasting, and scenario modeling.</p>
+            <a href="#slide3">
+                <button class="vs-button-red text-white font-bold text-sm py-2 px-4 rounded shadow">
+                  slide
+                </button>
+              </a>
           </div>
-          <!-- end swiper -->
+          <!-- col 2 carousel -->
+          <div class="w-full lg:w-1/2 flex justify-center items-center py-8 px-3">
+            <!-- Swiper -->
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" data-hash="slide1">
+                  <img class="w-full object-cover object-center drop-shadow-med" src="/img/vs_graph2.webp" />
+                </div>
+                <div class="swiper-slide" data-hash="slide2">
+                  <img class="w-full object-cover object-center drop-shadow-med" src="/img/vs_payroll.webp" />
+                </div>
+                <div class="swiper-slide" data-hash="slide3">
+                  <img class="w-full object-cover object-center drop-shadow-med" src="/img/vs_planning.webp" />
+                </div>
+                <div class="swiper-slide" data-hash="slide4">
+                  <img class="w-full object-cover object-center drop-shadow-med" src="/img/vs_slide4.jpeg" />
+                </div>
+              </div>
+              <!-- Add Pagination -->
+              <!-- <div class="swiper-pagination"></div> -->
+              <!-- Add Arrows -->
+              <!-- <div class="swiper-button-next"></div> -->
+              <!-- <div class="swiper-button-prev"></div> -->
+            </div>
+            <!-- end swiper -->
+          </div>
         </div>
-      </div>
+      </section>
       <!-- end section 3 -->
 
       <!-- section 4 -->
-      <div class="flex flex-wrap align-stretch bg-gray-100 bg-cover bg-bottom" style="background-image: url('/img/vs_wave.png');">
-        <!-- col 1 image -->
-        <div class="w-full lg:w-1/2 flex justify-center items-center p-8">
-          <img class="h-auto w-full object-cover object-center drop-shadow-med" src="/img/vs_flow.webp" />
+      <section>
+        <div class="flex flex-wrap align-stretch bg-gray-100 bg-cover bg-bottom" style="background-image: url('/img/vs_wave.png');">
+          <!-- col 1 image -->
+          <div class="w-full lg:w-1/2 flex justify-center items-center p-8">
+            <img class="h-auto w-full object-cover object-center drop-shadow-med" src="/img/vs_flow.webp" />
+          </div>
+          <!-- col 2 text -->
+          <div class="flex flex-col justify-center items-start w-full lg:w-1/2 px-20 py-15">
+            <p class="text-sm font-bold tracking-wide uppercase mb-0 mt-10 vs-green">Risus Quam</p>
+            <h1 class="text-4xl leading-tight font-serif font-bold mb-5 mt-3">Consectetur purus sit amet fermentum.</h1>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. </p>
+          </div>
         </div>
-        <!-- col 2 text -->
-        <div class="flex flex-col justify-center items-start w-full lg:w-1/2 px-20 py-15">
-          <p class="text-sm font-bold tracking-wide uppercase mb-0 mt-10 vs-green">Risus Quam</p>
-          <h1 class="text-4xl leading-tight font-serif font-bold mb-5 mt-3">Consectetur purus sit amet fermentum.</h1>
-          <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. </p>
-        </div>
-      </div>
+      </section>
       <!-- end section 4 -->
       
       <hr class="bg-gray-100 w-3/4 mx-auto px-10" />
 
       <!-- section 5 partners -->
-      <div class="flex min-h-full">
-        <div class="mx-auto w-full md:w-4/5 lg:w-3/5 xl:w-3/5 flex flex-col justify-center align-center text-center p-10">
-          <h2 class="text-3xl md:text-4xl font-serif font-bold leading-tight my-6">Adipiscing Fringilla Mattis Dolor Vulputate.</h2>
-        </div> 
-      </div>
-      <!-- section 5 logos -->
+      <section>
+        <div class="flex min-h-full">
+          <div class="mx-auto w-full md:w-4/5 lg:w-3/5 xl:w-3/5 flex flex-col justify-center align-center text-center p-10">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold leading-tight my-6">Adipiscing Fringilla Mattis Dolor Vulputate.</h2>
+          </div> 
+        </div>
+        <!-- section 5 logos -->
+        <div class="flex flex-wrap pb-20">
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-center items-center px-15 py-5 md:p-15 lg:p-8">
+              <img class="w-3/4 md:w-full drop-shadow-light" src="/img/vs_cloud.png" alt="">
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-center items-center px-20 py-5 md:p-15 lg:p-8">
+              <img class="w-3/4 md:w-full drop-shadow-light" src="/img/vs_fusion.png" alt="">
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-center items-center px-20 py-5 md:p-15 lg:p-8">
+              <img class="w-3/4 md:w-full drop-shadow-light" src="/img/vs_nandos.png" alt="">
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-center items-center px-20 py-5 md:p-15 lg:p-8">
+              <img class="w-3/4 md:w-full drop-shadow-light" src="/img/vs_brookfield.png" alt="">
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-center items-center px-20 py-5 md:p-15 lg:p-8">
+              <img class="w-3/4 md:w-full drop-shadow-light" src="/img/vs_roxgold.png" alt="">
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-center items-center px-20 py-5 md:p-15 lg:p-8">
+              <img class="w-3/4 md:w-full drop-shadow-light" src="/img/vs_paylocity.png" alt="">
+            </div>
+        </div>
+      </section>
+      <!-- end section 5 -->
+
+      <!-- section 6 CTA -->
+      <section>
+        <div class="flex flex-wrap align-stretch bg-gray-100 bg-no-repeat bg-cover bg-right text-white" style="background-image: url('/img/vs_wave_sphere_green.png');">
+          <!-- col 1 text -->
+          <div class="w-full lg:w-1/2 flex flex-col justify-center items-start p-20">
+            <h2 class="text-4xl leading-tight font-serif font-bold mb-8">Ready to start your own growth journey?</h2>
+            <button class="uppercase tracking-wider font-bold text-sm bg-red-200 px-4 p-3 rounded text-green-800 hover:bg-green-500">Request Demo</button>
+          </div>
+        </div>
+    </section>
+      <!-- end section 6 -->
+
+      <!-- footer -->
+      <footer>
       <div class="flex flex-wrap pb-20">
           <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-center items-center px-15 py-5 md:p-15 lg:p-8">
-            <img class="w-3/4 md:w-full drop-shadow-light" src="/img/vs_cloud.png" alt="">
+            <img class="w-3/4 md:w-full drop-shadow-light" src="/img/vs_logo2.svg" alt="Vena Solutions Logo">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
           </div>
           <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-center items-center px-20 py-5 md:p-15 lg:p-8">
-            <img class="w-3/4 md:w-full drop-shadow-light" src="/img/vs_fusion.png" alt="">
+            
           </div>
           <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-center items-center px-20 py-5 md:p-15 lg:p-8">
-            <img class="w-3/4 md:w-full drop-shadow-light" src="/img/vs_nandos.png" alt="">
+            
           </div>
           <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-center items-center px-20 py-5 md:p-15 lg:p-8">
             <img class="w-3/4 md:w-full drop-shadow-light" src="/img/vs_brookfield.png" alt="">
@@ -295,17 +346,8 @@
             <img class="w-3/4 md:w-full drop-shadow-light" src="/img/vs_paylocity.png" alt="">
           </div>
       </div>
-      <!-- end section 5 -->
-
-      <!-- section 6 CTA -->
-      <div class="flex flex-wrap align-stretch bg-gray-100 bg-no-repeat bg-cover bg-right text-white" style="background-image: url('/img/vs_wave_sphere_green.png');">
-        <!-- col 1 text -->
-        <div class="w-full lg:w-1/2 flex flex-col justify-center items-start p-20">
-          <h2 class="text-4xl leading-tight font-serif font-bold mb-8">Ready to start your own growth journey?</h2>
-          <button class="uppercase tracking-wider font-bold text-sm bg-red-200 px-4 p-3 rounded text-green-800 hover:bg-green-500">Request Demo</button>
-        </div>
-      </div>
-      <!-- end section 6 -->
+      </footer>
+      <!-- end footer -->
 
 
 
