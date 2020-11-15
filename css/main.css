@@ -146,6 +146,9 @@ textarea {
   .drop-shadow-med {
     filter: drop-shadow(5px 5px 5px darkgrey);
   }
+  .text-shadow {
+    text-shadow: 1px 1px 5px #000;
+  }
 
   /* media queries */
 
