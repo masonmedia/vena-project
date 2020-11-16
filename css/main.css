@@ -236,6 +236,9 @@ textarea {
     #menu.menu {
       display: none;
     }
+    .nav-cta {
+      display: none;
+    }
   }
 
 
