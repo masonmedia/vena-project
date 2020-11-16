@@ -19,4 +19,4 @@ I use CDNs for Tailwind and the AOS animation library.  In a production build I 
 ### SEO
 ---
 
-I included very basic 
+I included very basic SEO and AODA tags. For production this would be more thoroughly tuned up.
