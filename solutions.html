@@ -85,55 +85,56 @@
       <div class="flex flex-col justify-center items-start w-full lg:w-1/2 p-10">
         <p class="text-sm font-bold tracking-wide uppercase mb-0 mt-10 vs-green">Microsoft Partner</p>
         <h1 class="text-5xl leading-tight font-serif font-bold my-3">Justo Parturient Pellentesque Ornare</h1>
-        <button class="modal-open vs-button-red text-white font-bold text-xl uppercase tracking-wider py-2 px-4 my-5 rounded shadow-lg">
+        <!-- <button class="modal-open vs-button-red text-white font-bold text-xl uppercase tracking-wider py-2 px-4 my-5 rounded shadow-lg">
           Get Started
-        </button>
+        </button> -->
         <!-- <button class="modal-open bg-transparent border border-gray-500 hover:border-indigo-500 text-gray-500 hover:text-indigo-500 font-bold py-2 px-4 rounded-full">Open Modal</button> -->
 
-
-        <div
-        class="modal2 fixed inset-0 z-50 bg-gray-900 bg-opacity-75 flex items-center justify-center p-3"
+<!-- component -->
+<div id="modal2"
+class="fixed inset-0 z-50 bg-gray-900 bg-opacity-75 flex items-center justify-center p-3"
+>
+<div
+  class="bg-white max-w-lg rounded-lg overflow-hidden px-3 lg:px-6 py-4 space-y-4"
+>
+  <div class="flex justify-center">
+    <span
+      class="inline-flex items-center bg-red-200 bg-opacity-75 rounded-full p-2"
+    >
+      <svg
+        class="h-10 w-auto text-red-500"
+        fill="currentColor"
+        viewBox="0 0 20 20"
       >
-        <div
-          class="bg-white max-w-lg rounded-lg overflow-hidden px-3 lg:px-6 py-4 space-y-4"
-        >
-          <div class="flex justify-center">
-            <span
-              class="inline-flex items-center bg-red-200 bg-opacity-75 rounded-full p-2"
-            >
-              <svg
-                class="h-10 w-auto text-red-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </span>
-          </div>
-          <div class="flex flex-col items-center space-y-2">
-            <h1 class="font-semibold">Payment Fail</h1>
-            <div>
-              <p class="leading-tight text-sm lg:text-base">
-                Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit.
-              </p>
-            </div>
-          </div>
-          <div class="flex justify-center pt-4">
-            <button
-            id="menuBtn"
-              type="button"
-              class="modal-close rounded-lg px-5 py-2 border-2 border-gray-300 focus:border-transparent focus:outline-none focus:shadow-outline font-medium"
-            >
-              Dismiss
-            </button>
-          </div>
-        </div>
-      </div>
+        <path
+          fill-rule="evenodd"
+          d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </span>
+  </div>
+  <div class="flex flex-col items-center space-y-2">
+    <h1 class="font-semibold">Payment Fail</h1>
+    <div>
+      <p class="leading-tight text-sm lg:text-base">
+        Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit.
+      </p>
+    </div>
+  </div>
+  <div class="flex justify-center pt-4">
+    <button
+      type="button"
+      id="dismiss"
+      class="rounded-lg px-5 py-2 border-2 border-gray-300 focus:border-transparent focus:outline-none focus:shadow-outline font-medium"
+    >
+      Dismiss
+    </button>
+  </div>
+</div>
+</div>
+
     
   
        
@@ -148,8 +149,6 @@
   </main>
 </div>
 
-
-  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>

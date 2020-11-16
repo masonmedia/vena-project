@@ -19,7 +19,7 @@
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="/css/main.css">
 
@@ -31,7 +31,10 @@
   Tailwind UI components require Tailwind CSS v1.8 and the @tailwindcss/ui plugin.
   Read the documentation to get started: https://tailwindui.com/documentation
 -->
-<div class="nav-wrapper fixed z-10 w-full">
+<div class="nav-wrapper fixed z-10 w-full"
+data-aos="fade" 
+data-aos-duration="800" 
+data-aos-easing="ease-in-out-back">
 <nav class="flex flex-wrap items-center justify-between flex-wrap w-full bg-white p-6 shadow-lg">
     <div class="flex items-center flex-shrink-0 text-gray-700 mr-6 cursor-pointer">
       <a href="/">
@@ -73,9 +76,65 @@
       </div>
       <div>
         <a href="#" class="inline-block text-sm font-bold text-gray-700 pr-4 py-2 leading-none mt-4 mr-3 lg:mt-0 lg:hover:text-green-800 ease-in-out transition-colors duration-100">login</a>
-        <button class="modal-open vs-button-red text-white font-bold text-sm py-2 px-4 rounded">
+        <button class="modal-open2 vs-button-red text-white font-bold text-sm py-2 px-4 rounded">
             REQUEST DEMO
           </button>
+
+          <!--Banner Modal-->
+          <div class="modal2 opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
+              <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+              
+              <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+                
+                <div class="modal-close2 absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+                  <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                    <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+                  </svg>
+                  <span class="text-sm">(Esc)</span>
+                </div>
+                <!-- modal text -->
+                <div class="modal-content py-4 text-left px-6 bg-cover"
+                  style="background-image: url('/img/vs_wave.webp')">
+                  <!--Title-->
+                  <div class="flex justify-between items-center pb-2">
+                    <p class="text-3xl text-gray-600 font-bold font-serif tracking-snug">Contact Us!</p>
+                    <div class="modal-close cursor-pointer z-50">
+                      <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+                      </svg>
+                    </div>
+                  </div>
+  
+                  <!--Modal Body-->
+                  
+                  <!-- form -->
+                  <div class="w-full">
+                      <form class="px-2 pt-6 pb-2">
+                        <div class="mb-4">
+                          <label class="block text-gray-700 text-sm font-bold mb-2" for="Name">
+                            Name
+                          </label>
+                          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="Name" type="text" placeholder="Name">
+                        </div>
+                        <div class="mb-6">
+                          <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                            Email
+                          </label>
+                          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email">
+                        </div>
+                      </form>
+                    </div>
+  
+                  <!--Modal Footer-->
+                  <div class="flex justify-end pt-2">
+                    <button class="px-4 bg-transparent border border-green-600 p-3 rounded-lg text-green-600 hover:text-green-100 hover:bg-green-600 mr-2">Submit</button>
+                    <button class="modal-close px-4 bg-green-600 p-3 rounded-lg text-white hover:bg-green-500">Close</button>
+                  </div>
+                  <!-- end modal footer -->
+                </div>
+              </div>
+            </div>
+            <!-- end modal -->
       </div>
     </div>
   </nav>  
@@ -97,9 +156,18 @@
       <div class="w-full mt-10"></div>
         <!-- col 1 text -->
         <div class="flex flex-col justify-center items-start w-full lg:w-1/2 p-10">
-          <p class="text-sm font-bold tracking-wide uppercase mb-0 mt-10 vs-green">Microsoft Partner</p>
-          <h1 class="text-4xl md:text-5xl leading-tight font-serif font-black my-3">Justo Parturient Pellentesque Ornare</h1>
-          <button class="modal-open vs-button-red text-white font-bold text-xl uppercase tracking-wider py-2 px-4 my-5 rounded shadow-lg">
+          <p class="text-sm font-bold tracking-wide uppercase mb-0 mt-10 vs-green"
+          data-aos="fade-up" 
+          data-aos-duration="1000" 
+          data-aos-easing="ease-in-out-back">Microsoft Partner</p>
+          <h1 class="text-4xl md:text-5xl leading-tight font-serif font-black my-3"
+          data-aos="fade-up" 
+          data-aos-duration="1200" 
+          data-aos-easing="ease-in-out-back">Justo Parturient Pellentesque Ornare</h1>
+          <button class="modal-open vs-button-red text-white font-bold text-xl uppercase tracking-wider py-2 px-4 my-5 rounded shadow-lg"
+          data-aos="fade-up" 
+          data-aos-duration="1500" 
+          data-aos-easing="ease-in-out-back">
             Get Started
           </button>
           <!--Banner Modal-->
@@ -159,7 +227,10 @@
           <!-- end modal -->
         </div>
         <!-- col 2 image -->
-        <div class="w-full lg:w-1/2">
+        <div class="w-full lg:w-1/2"
+          data-aos="fade-up" 
+          data-aos-duration="1500" 
+          data-aos-easing="ease-in-out-back">
           <img class="h-auto w-full object-cover object-center pt-10" src="/img/vs_graph_crop.png" />
         </div>
       </div>
@@ -177,7 +248,7 @@
 
         <!-- section 2: video -->
         <section>
-          <div class="flex flex-wrap align-stretch bg-gray-100 bg-no-repeat bg-fixed bg-right py-16" style="background-image: url('/img/vs_sphere2.png'); background-size: 65%">
+          <div class="flex flex-wrap align-stretch bg-gray-100 bg-no-repeat bg-right py-16" style="background-image: url('/img/vs_sphere2.png'); background-size: 65%">
             <!-- col 1 text -->
             <div class="flex flex-col justify-center items-start w-full lg:w-1/2 p-15 lg:p-20">
               <h2 class="text-2xl leading-normal font-serif font-bold mb-3">"With Vena, we’ve already cut a month and a half out of our budget process, and we’ll probably cut another month when we do our budget this fall.”</h2>
@@ -433,7 +504,7 @@
 </div>
 
 
-  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>

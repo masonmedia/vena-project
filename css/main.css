@@ -87,10 +87,14 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+  body {
+    transition: all 1s ease-in-out;
+  }
+  
 /* nav */
 
 .show {
-  display: flex;
+  display: block;
 }
 
 .nav-wrapper {
