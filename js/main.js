@@ -31,7 +31,6 @@ AOS.init();
     const nav = document.getElementById('menu');
 
     btn.addEventListener('click', function() {
-    // nav.classList.toggle('show');
     nav.classList.toggle('menu');
     })
   }());
