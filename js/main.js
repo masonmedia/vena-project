@@ -47,9 +47,9 @@ var swiper = new Swiper('.swiper-container', {
     hashNavigation: {
         watchState: true,
     },
-    autoplay: {
-        delay: 4000,
-        },
+    // autoplay: {
+    //     delay: 4000,
+    //     },
     speed: 800,
         loop: true,
     //   effect: 'fade',
@@ -63,6 +63,7 @@ var swiper = new Swiper('.swiper-container', {
     },
     });
     
+    // document.getElementById
 
     
 
