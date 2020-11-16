@@ -14,7 +14,8 @@ const btn = document.getElementById('menuBtn');
 const nav = document.getElementById('menu');
 
 menuBtn.addEventListener('click', function() {
-    nav.classList.toggle('hidden');
+    // nav.classList.toggle('show');
+    nav.classList.toggle('menu');
 })
 
 // modal
@@ -46,7 +47,6 @@ var openmodal = document.querySelectorAll('.modal-open')
     	toggleModal()
       }
     };
-    
     
     function toggleModal () {
       const body = document.querySelector('body')

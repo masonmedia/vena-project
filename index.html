@@ -31,7 +31,7 @@
   Tailwind UI components require Tailwind CSS v1.8 and the @tailwindcss/ui plugin.
   Read the documentation to get started: https://tailwindui.com/documentation
 -->
-<div class="fixed z-10 w-full">
+<div class="nav-wrapper fixed z-10 w-full">
 <nav class="flex flex-wrap items-center justify-between flex-wrap w-full bg-white p-6 shadow-lg">
     <div class="flex items-center flex-shrink-0 text-gray-700 mr-6 cursor-pointer">
       <a href="/">
@@ -40,11 +40,17 @@
     </div>
     <div class="block lg:hidden">
       <button id="menuBtn" class="flex items-center px-3 py-2 text-gray-500 hover:text-black focus:outline-none">
-        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        <!-- <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg> -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round"><title>Menu</title>
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <line x1="4" y1="6" x2="20" y2="6" />
+          <line x1="4" y1="12" x2="20" y2="12" />
+          <line x1="4" y1="18" x2="20" y2="18" />
+        </svg>
       </button>
     </div>
     <!-- nav collapse -->
-    <div id="menu" class="w-full flex-grow lg:flex lg:items-center lg:w-auto">
+    <div id="menu" class="menu block w-full flex-grow lg:flex lg:items-center lg:w-auto">
       <div class="text-sm lg:flex-grow">
         <a href="/solutions.html" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 hover:text-gray-300 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
           Solutions
@@ -177,7 +183,7 @@
         <section>
           <div class="flex flex-wrap align-stretch bg-gray-100 bg-no-repeat bg-fixed bg-right py-16" style="background-image: url('/img/vs_sphere2.png'); background-size: 65%">
             <!-- col 1 text -->
-            <div class="flex flex-col justify-center items-start w-full lg:w-1/2 p-20">
+            <div class="flex flex-col justify-center items-start w-full lg:w-1/2 p-15 lg:p-20">
               <h2 class="text-2xl leading-normal font-serif font-bold mb-3">"With Vena, we’ve already cut a month and a half out of our budget process, and we’ll probably cut another month when we do our budget this fall.”</h2>
               <ul class="mt-3">
                 <li class="font-bold">Margaret Anderson</li>
@@ -258,11 +264,11 @@
       <section>
         <div class="flex flex-wrap align-stretch bg-gray-100 bg-cover bg-bottom" style="background-image: url('/img/vs_wave.png');">
           <!-- col 1 image -->
-          <div class="w-full lg:w-1/2 flex justify-center items-center p-8">
+          <div class="w-full lg:w-1/2 flex justify-center items-center p-8 order-last">
             <img class="h-auto w-full object-cover object-center drop-shadow-med" src="/img/vs_flow.webp" />
           </div>
           <!-- col 2 text -->
-          <div class="flex flex-col justify-center items-start w-full lg:w-1/2 px-20 py-15">
+          <div class="flex flex-col justify-center items-start w-full lg:w-1/2 px-20 py-8 md:py-10">
             <p class="text-sm font-bold tracking-wide uppercase mb-0 mt-10 vs-green">Risus Quam</p>
             <h1 class="text-4xl leading-tight font-serif font-bold mb-5 mt-3">Consectetur purus sit amet fermentum.</h1>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. </p>
@@ -418,9 +424,9 @@
         </div>
         <!-- footer nav -->
         <ul class="flex justify-start align-start bg-gray-100 w-full px-10 py-3 font-hairline">
-          <li class="mr-2 cursor-pointer text-sm">&copy; 2020 Vena Solutions. All Rights Reserved.</li>  
-          <li class="d-flex ml-auto mr-6 cursor-pointer text-sm">Copyright.</li>  
-          <li class="mr-2 cursor-pointer text-sm">Privacy Policy.</li>  
+          <li class="mr-2 cursor-pointer text-xs md:text-sm">&copy; 2020 Vena Solutions. All Rights Reserved.</li>  
+          <li class="d-flex ml-auto mr-6 cursor-pointer text-xs md:text-sm">Copyright.</li>
+          <li class="mr-2 cursor-pointer text-xs md:text-sm">Privacy Policy.</li>  
         </ul>
       </footer>
       <!-- end footer -->
