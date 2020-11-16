@@ -1,4 +1,7 @@
-AOS.init();
+AOS.init({
+    easing: 'ease-in-out-back',
+    offset: 0,
+});
 
 (function () {  
     var modalBtns = document.querySelectorAll('.modal-open');
