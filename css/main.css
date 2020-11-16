@@ -90,7 +90,7 @@ textarea {
   body {
     transition: all 1s ease-in-out;
   }
-  
+
 /* nav */
 
 .show {
@@ -199,7 +199,9 @@ textarea {
 
   .modal {
     transition: opacity 0.25s ease;
+    display: none;
   }
+  
   body.modal-active {
     overflow-x: hidden;
     overflow-y: visible !important;

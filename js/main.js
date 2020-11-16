@@ -1,3 +1,22 @@
+(function () {  
+    var modalBtns = document.querySelectorAll('.modal-open');
+
+    modalBtns.forEach(function(btn) {
+        btn.onclick = function() {
+            let modal = btn.getAttribute('data-modal');
+            document.getElementById(modal).style.display = 'block';
+        }
+    });
+
+    var closeBtns = document.querySelectorAll('.modal-close');
+    closeBtns.forEach(function(btn) {
+        btn.onclick = function() {
+            let modal = btn.closest('.modal').style.display = 'none';
+        }
+    })
+
+}());
+
 // navToggle();
 
 (function () {
@@ -81,32 +100,35 @@
 
         const btn1 = document.getElementById('demoBtn');
         const btn2 = document.getElementById('getStartedBtn');
-        const btn3 = document.getElementById('catBtn');
+        const btn3 = document.getElementById('ctaBtn');
 
         const modal1Close = document.getElementById('close1');
         const modal2Close = document.getElementById('close2');
         const modal3Close = document.getElementById('close3');
 
         // open
-        btn1.addEventListener('click', function() {
-            modal1.classList.toggle('hidden');
-        })
-        // close
-        modal1Close.addEventListener('click', function() {
-            modal1.classList.toggle('hidden');
-        })
-
-        
+        // btn1.addEventListener('click', function() {
+        //     modal1.classList.toggle('hidden');
+        // });
         btn2.addEventListener('click', function() {
             modal2.classList.toggle('hidden');
-        })
-        close.addEventListener('click', function() {
+        });
+        btn3.addEventListener('click', function() {
+            modal3.classList.toggle('hidden');
+        });
+        // close
+        // modal1Close.addEventListener('click', function() {
+        //     modal1.classList.toggle('hidden');
+        // });
+        modal2Close.addEventListener('click', function() {
             modal2.classList.toggle('hidden');
-        })
+        });
+        modal3Close.addEventListener('click', function() {
+            modal3.classList.toggle('hidden');
+        });
     }())
-            
-      
+    
 
-//  (function () {
-//     sal();
-//  }());   
+
+            
+
