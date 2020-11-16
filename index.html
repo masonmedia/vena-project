@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="css/sal.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -140,9 +140,18 @@
       <div class="w-full mt-10"></div>
         <!-- col 1 text -->
         <div class="flex flex-col justify-center items-start w-full lg:w-1/2 p-10">
-          <p class="text-sm font-bold tracking-wide uppercase mb-0 mt-10 vs-green">Microsoft Partner</p>
-          <h1 class="text-4xl md:text-5xl leading-tight font-serif font-black my-3">Justo Parturient Pellentesque Ornare</h1>
-          <button id="getStartedBtn" class="modal-open vs-button-red text-white font-bold text-xl uppercase tracking-wider py-2 px-4 my-5 rounded shadow-lg" data-modal="modal2">
+          <p class="text-sm font-bold tracking-wide uppercase mb-0 mt-10 vs-green"
+          data-aos="fade-up" 
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out-back">Microsoft Partner</p>
+          <h1 class="text-4xl md:text-5xl leading-tight font-serif font-black my-3"
+          data-aos="fade-up" 
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out-back">Justo Parturient Pellentesque Ornare</h1>
+          <button id="getStartedBtn" class="modal-open vs-button-red text-white font-bold text-xl uppercase tracking-wider py-2 px-4 my-5 rounded shadow-lg" data-modal="modal2"
+          data-aos="fade-up" 
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out-back">
             Get Started
           </button>
            <!-- banner modal -->
@@ -189,7 +198,10 @@
         <!-- end modal -->
         </div>
         <!-- col 2 image -->
-        <div class="w-full lg:w-1/2">
+        <div class="w-full lg:w-1/2"
+        data-aos="fade-up"
+        data-aos-duration="1600"
+        data-aos-easing="ease-in-out-back">
           <img class="h-auto w-full object-cover object-center pt-10" src="/img/vs_graph_crop.png" />
         </div>
       </div>
@@ -505,8 +517,7 @@
   </main>
 </div>
 
-
-  <script src="js/sal.js" async></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>

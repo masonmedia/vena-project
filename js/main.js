@@ -1,3 +1,5 @@
+AOS.init();
+
 (function () {  
     var modalBtns = document.querySelectorAll('.modal-open');
 

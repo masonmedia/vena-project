@@ -88,7 +88,8 @@ textarea {
    ========================================================================== */
 
   body {
-    transition: all 1s ease-in-out;
+    transition: all .5s ease-in-out;
+    animation: fadeIn .5s ease-in-out;
   }
 
 /* nav */
@@ -99,9 +100,6 @@ textarea {
 
 .nav-wrapper {
   transition: all 1s ease-in-out;
-}
-#menu {
-  animation: fadeIn 1s ease-in-out alternate;
 }
 
 @keyframes fadeIn {
