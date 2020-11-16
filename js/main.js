@@ -47,9 +47,6 @@ var swiper = new Swiper('.swiper-container', {
     hashNavigation: {
         watchState: true,
     },
-    // autoplay: {
-    //     delay: 4000,
-    //     },
     speed: 800,
         loop: true,
     //   effect: 'fade',
@@ -63,7 +60,24 @@ var swiper = new Swiper('.swiper-container', {
     },
     });
     
-    // document.getElementById
+    const slide1 = document.getElementById('past');
+    slide1.addEventListener('click', function() {
+        slide1.classList.toggle('bg-gray-100');
+        slide2.classList.remove('bg-gray-100');
+        slide3.classList.remove('bg-gray-100');
+    })
+    const slide2 = document.getElementById('present');
+    slide2.addEventListener('click', function() {
+        slide2.classList.toggle('bg-gray-100');
+        slide1.classList.remove('bg-gray-100');
+        slide3.classList.remove('bg-gray-100');
+    })
+    const slide3 = document.getElementById('future');
+    slide3.addEventListener('click', function() {
+        slide2.classList.remove('bg-gray-100');
+        slide1.classList.remove('bg-gray-100');
+        slide3.classList.toggle('bg-gray-100');
+    })
 
     
 
