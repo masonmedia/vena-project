@@ -126,12 +126,6 @@
     </div>
   </nav>  
   <!-- end nav -->
-  <!-- breadcrums -->
-  <ul class="flex justify-start align-start bg-gray-100 text-green-500 w-full text-sm pl-6 py-2 font-bold">
-    <li class="mr-2 cursor-pointer">Home ></li>  
-    <li class="mr-2 cursor-pointer">Solutions ></li>  
-    <li class="mr-2 cursor-pointer">FP&A</li>  
-  </ul>
 </div>
     
   <main>
@@ -205,7 +199,7 @@
         data-aos="fade-up"
         data-aos-duration="1600"
         data-aos-easing="ease-in-out-back">
-          <img class="h-auto w-full object-cover object-center pt-10" src="img/vs_graph_crop.png" />
+          <img class="h-auto w-full object-cover object-center pt-10 lazyload" data-src="img/vs_graph_crop.png" />
         </div>
       </div>
     </section>
@@ -245,7 +239,7 @@
             <div class="w-full lg:w-1/2 flex justify-center items-center p-8"
             data-aos="fade-up" 
             data-aos-duration="1500">
-              <img class="h-auto w-full object-cover object-center drop-shadow-med" src="img/vs_video.png" />
+              <img class="h-auto w-full object-cover object-center drop-shadow-med lazyload" data-src="img/vs_video.png" />
             </div>
           </div>
         </section>
@@ -272,7 +266,6 @@
                 slide
               </button>
             </a>
-            <span class="swiper-pagination-bullet"></span>
             <h2 class="text-2xl leading-normal font-serif font-black my-3">Present</h2>
             <p>Position yourself for success in the present with Regulatory Reporting, Financial Reporting, Management Dashboards, and Variance Analysis.</p>
 
@@ -538,6 +531,7 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
