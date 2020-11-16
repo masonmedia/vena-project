@@ -220,6 +220,12 @@ textarea {
     text-shadow: 1px 1px 5px #000;
   }
 
+  /* swiper carousel */
+
+  /* .swiper-button-next:after, .swiper-button-prev:after {
+    color: black;
+  } */
+
   /* media queries */
 
   @media (max-width: 1023px) {
