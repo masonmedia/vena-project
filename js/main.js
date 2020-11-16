@@ -1,7 +1,3 @@
-(function () {
-    AOS.init();
-  }());
-  
 // navToggle();
 
 (function () {
@@ -79,11 +75,38 @@
     // modalClose
 
     (function () {
-        const modalTwo = document.getElementById('modal2');
-        const close = document.getElementById('dismiss');
-    
-        close.addEventListener('click', function() {
-            modalTwo.classList.toggle('hidden');
+        const modal1 = document.getElementById('demo');
+        const modal2 = document.getElementById('getStarted');
+        const modal3 = document.getElementById('cta');
+
+        const btn1 = document.getElementById('demoBtn');
+        const btn2 = document.getElementById('getStartedBtn');
+        const btn3 = document.getElementById('catBtn');
+
+        const modal1Close = document.getElementById('close1');
+        const modal2Close = document.getElementById('close2');
+        const modal3Close = document.getElementById('close3');
+
+        // open
+        btn1.addEventListener('click', function() {
+            modal1.classList.toggle('hidden');
         })
-      }());
-    
+        // close
+        modal1Close.addEventListener('click', function() {
+            modal1.classList.toggle('hidden');
+        })
+
+        
+        btn2.addEventListener('click', function() {
+            modal2.classList.toggle('hidden');
+        })
+        close.addEventListener('click', function() {
+            modal2.classList.toggle('hidden');
+        })
+    }())
+            
+      
+
+//  (function () {
+//     sal();
+//  }());   
