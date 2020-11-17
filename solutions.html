@@ -18,6 +18,9 @@
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -29,82 +32,63 @@
   Tailwind UI components require Tailwind CSS v1.8 and the @tailwindcss/ui plugin.
   Read the documentation to get started: https://tailwindui.com/documentation
 -->
-<div class="fixed z-10 w-full">
+<div class="nav-wrapper fixed z-10 w-full">
 <nav class="flex flex-wrap items-center justify-between flex-wrap w-full bg-white p-6 shadow-lg">
     <div class="flex items-center flex-shrink-0 text-gray-700 mr-6 cursor-pointer">
-        <a href="/">
-            <img class="h-auto w-20" src="./img/vs_logo2.svg" />
-        </a>
+      <a href="/">
+      <img class="h-auto w-20" src="img/vs_logo2.svg" alt="Vena Solutions Logo" />
+      </a>
     </div>
-    <div class="block lg:hidden">
-      <button id="menuBtn" class="flex items-center px-3 py-2 text-gray-500 hover:text-black focus:outline-none">
-        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+    <!-- mobile menu + cta -->
+    <div class="flex items-center lg:hidden">
+      <button type="button" class="modal-open vs-button-red text-xs lg:text-sm text-white font-bold py-2 px-4 rounded" data-modal="modal4">REQUEST DEMO</button>
+      <button id="menuBtn" type="button" class="px-3 py-2 text-gray-500 hover:text-black focus:outline-none">
+        <!-- <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg> -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round"><title>Menu</title>
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <line x1="4" y1="6" x2="20" y2="6" />
+          <line x1="4" y1="12" x2="20" y2="12" />
+          <line x1="4" y1="18" x2="20" y2="18" />
+        </svg>
       </button>
     </div>
     <!-- nav collapse -->
-    <div id="menu" class="w-full flex-grow lg:flex lg:items-center lg:w-auto">
+    <div id="menu" class="menu block w-full flex-grow lg:flex lg:items-center lg:w-auto">
       <div class="text-sm lg:flex-grow">
-        <a href="/solutions.html" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 hover:text-gray-300 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
+        <a href="solutions.html" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 hover:text-gray-300 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
           Solutions
         </a>
-        <a href="#responsive-header" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
+        <a href="#" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
           Customers
         </a>
-        <a href="#responsive-header" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
+        <a href="#" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
           Partners
         </a>
-        <a href="#responsive-header" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
+        <a href="#" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
           Resources
         </a>
-        <a href="#responsive-header" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
+        <a href="#" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
           Events
         </a>
-        <a href="#responsive-header" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
+        <a href="#" class="text-sm block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 lg:hover:text-green-800 ease-in-out transition-colors duration-100">
           About
         </a>
       </div>
       <div>
-        <a href="#" class="inline-block text-sm font-bold text-gray-700 pr-4 py-2 leading-none mt-4 mr-3 lg:mt-0 lg:hover:text-green-800 ease-in-out transition-colors duration-100">login</a>
-        <button class="modal-open vs-button-red text-white font-bold text-sm py-2 px-4 rounded">
-            REQUEST DEMO
-          </button>
-      </div>
-    </div>
-  </nav>  
-  <!-- breadcrums -->
-    <!-- <ul class="flex justify-start align-start bg-gray-100 text-green-500 w-full text-sm pl-6 py-2 font-bold">
-        <li class="mr-2 cursor-pointer">Home ></li>  
-        <li class="mr-2 cursor-pointer">Solutions</li>  
-    </ul> -->
-</div>
-    
-  <main>
-    <!-- Banner Two columns -->
-    <div class="flex flex-wrap align-stretch pt-20 px-10 bg-cover bg-fixed"
-    style="background-image: url('/img/vs_wave.webp')">
-    <!-- spacer -->
-    <div class="w-full mt-10"></div>
-      <!-- col 1 text -->
-      <div class="flex flex-col justify-center items-start w-full lg:w-1/2 p-10">
-        <!-- breadcrumbs -->
-        <ul class="flex justify-start align-start text-sm font-bold tracking-wide uppercase text-green-800 w-full text-sm py-2 font-bold">
-            <li class="mr-2 cursor-pointer text-gray-500 mr-2">Home ></li>  
-            <li class="mr-2 cursor-pointer">Solutions</li>  
-        </ul>
-        <h1 class="text-5xl leading-tight font-serif font-bold my-3">FP&A Software for Powering Your Plan to Grow</h1>
-        <button id="requestDemoBtn" class="vs-button-red text-white font-bold text-xl uppercase tracking-wider py-2 px-4 my-5 rounded shadow-lg">
-          Get Started
-        </button>
-
-        <!-- modal -->
-        <div id="requestDemo" class="hidden fixed inset-0 z-50 bg-gray-900 bg-opacity-75 flex items-center justify-center p-3 transition-all transition-100 animate__animated w-full">
+      <!-- nav cta + login -->
+      <a href="#" class="block font-bold mt-4 mr-8 py-4 lg:inline-block lg:mt-0 text-gray-500 lg:hover:text-green-800 ease-in-out transition-colors duration-100">Login</a>
+      <!-- activate modal -->
+      <button type="button" class="nav-cta modal-open vs-button-red text-white font-bold text-sm py-2 px-4 rounded" data-modal="modal1">REQUEST DEMO</button>
+        <!-- demo modal -->
+        <div id="modal1" class="modal fixed inset-0 z-50 bg-gray-900 bg-opacity-75 flex items-center justify-center p-3 pt-20 transition-all transition-100 w-full h-full">
             <div class="bg-white w-full md:w-1/2 mx-auto rounded-lg overflow-hidden p-10">
                 <div class="flex justify-center">
                     <span class="inline-flex items-center bg-green-200 bg-opacity-75 rounded-full p-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <rect x="3" y="5" width="18" height="14" rx="2" />
-                        <polyline points="3 7 12 13 21 7" />
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud-download" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                          <path d="M19 18a3.5 3.5 0 0 0 0 -7h-1a5 4.5 0 0 0 -11 -2a4.6 4.4 0 0 0 -2.1 8.4" />
+                          <line x1="12" y1="13" x2="12" y2="22" />
+                          <polyline points="9 19 12 22 15 19" />
                         </svg>
                     </span>
                 </div>
@@ -133,23 +117,516 @@
                 <!-- modal footer -->
                 <div class="flex justify-center pb-4">
                     <button class="px-4 bg-transparent border border-green-600 p-3 rounded-lg text-green-600 hover:text-green-100 hover:bg-green-600 mr-2" type="button">Submit</button>
-                    <button id="dismiss" class="modal-close px-4 bg-green-600 p-3 rounded-lg text-white hover:bg-green-500" type="button">Close</button>
+                    <button id="close1" class="modal-close px-4 bg-green-600 p-3 rounded-lg text-white hover:bg-green-500" type="button">Close</button>
                 </div>
             </div>
         </div>
         <!-- end modal -->
       </div>
-      <!-- col 2 image -->
-      <div class="w-full lg:w-1/2">
-        <img class="h-auto w-full object-cover object-center pt-10" src="/img/vs_graph_crop.png" />
-      </div>
     </div>
+  </nav>  
+  <!-- end nav -->
+</div>
+    
+  <main>
+    <!-- Banner -->
+    <section role="banner">
+      <div class="flex flex-wrap align-stretch pt-20 px-10 bg-cover bg-fixed"
+      style="background-image: url('img/vs_wave.webp')">
+      <!-- spacer -->
+      <div class="w-full mt-10"></div>
+        <!-- col 1 text -->
+        <div class="flex flex-col justify-center items-start w-full lg:w-1/2 p-10">
+          <!-- breadcrumbs -->
+          <ul class="flex justify-start align-start text-sm font-bold tracking-wide uppercase text-green-800 w-full text-sm py-2 font-bold"
+          data-aos="fade-up" 
+          data-aos-duration="1000">
+            <a href="#">
+              <li class="mr-2 cursor-pointer text-gray-500">Home</li>  
+            </a>
+            <span class="mr-2 cursor-pointer text-gray-500">></span>
+            <a href="#">
+              <li class="mr-2 cursor-pointer">Financial Planning & Analysis Software</li>  
+            </a>
+          </ul>
+          <h1 class="text-4xl md:text-5xl leading-tight font-serif font-black my-3"
+          data-aos="fade-up" 
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out-back">FP&A Software for Powering Your Plan to Grow</h1>
+          <button type="button" class="modal-open vs-button-red text-white font-bold text-xl uppercase tracking-wider py-2 px-4 my-5 rounded shadow-lg" data-modal="modal2"
+          data-aos="fade-up" 
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out-back">
+            Get Started
+          </button>
+           <!-- banner modal -->
+          <div id="modal2" class="modal fixed inset-0 z-50 bg-gray-900 bg-opacity-75 flex items-center justify-center p-3 pt-20 transition-all transition-100 w-full h-full">
+            <div class="bg-white w-full md:w-1/2 mx-auto rounded-lg overflow-hidden p-10">
+                <div class="flex justify-center items-center">
+                    <span class="inline-flex items-center bg-green-200 bg-opacity-75 rounded-full p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <polyline points="3 7 12 13 21 7" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="flex flex-col items-center my-3">
+                    <h1 class="font-semibold mb-2 mt-0">Contact Us!</h1>
+                    <p class="text-sm text-center px-5">Ea culpa incididunt do in amet non.</p>
+                    <!-- form -->
+                    <div class="w-full">
+                        <form class="p-2">
+                          <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="Name">
+                              Name
+                            </label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="Name" type="text" placeholder="Name">
+                          </div>
+                          <div class="mb-6">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                              Email
+                            </label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email">
+                          </div>
+                        </form>
+                    </div>
+                    <!-- end form -->
+                </div>
+                <!-- modal footer -->
+                <div class="flex justify-center pb-4">
+                    <button class="px-4 bg-transparent border border-green-600 p-3 rounded-lg text-green-600 hover:text-green-100 hover:bg-green-600 mr-2" type="button">Submit</button>
+                    <button id="close2" class="modal-close px-4 bg-green-600 p-3 rounded-lg text-white hover:bg-green-500" type="button">Close</button>
+                </div>
+            </div>
+        </div>
+        <!-- end modal -->
+        </div>
+        <!-- col 2 image -->
+        <div class="w-full lg:w-1/2"
+        data-aos="fade-up"
+        data-aos-duration="1600"
+        data-aos-easing="ease-in-out-back">
+          <img class="h-auto w-full object-cover object-center pt-10 transform drop-shadow-light lazyload" data-src="img/vs_planning.webp" alt="Vena Solutions Banner Image" />
+        </div>
+      </div>
+    </section>
     <!-- end banner -->
+
+    <!-- section 1 text -->
+    <div class="flex py-10 md:py-20 min-h-full">
+        <div class="mx-auto w-full md:w-4/5 lg:w-3/5 xl:w-3/5 flex flex-col justify-center align-center text-center p-10">
+          <h2 class="text-3xl md:text-4xl font-serif font-bold leading-tight my-6"
+          data-aos="fade-up" 
+          data-aos-duration="1000">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</h2>
+          <p 
+          data-aos="fade-up" 
+          data-aos-duration="1200">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui.</p>
+        </div>
+      </div>
+      <!-- end section 1 text -->
+
+        <!-- section 2: video -->
+        <section>
+          <div class="flex flex-wrap align-stretch bg-gray-100 bg-no-repeat bg-right bg-opacity-75 py-16" style="background-image: url('img/vs_sphere.webp'); background-size: 75%">
+            <!-- col 1 text -->
+            <div class="flex flex-col justify-center items-start w-full lg:w-1/2 p-15 lg:p-20">
+              <h2 class="text-2xl leading-normal font-serif font-bold mb-3"
+              data-aos="fade-up" 
+              data-aos-duration="1000">"With Vena, we’ve already cut a month and a half out of our budget process, and we’ll probably cut another month when we do our budget this fall.”</h2>
+              <ul class="mt-3">
+                <li class="font-bold"
+                data-aos="fade-up" 
+                data-aos-duration="1200">Margaret Anderson</li>
+                <li
+                data-aos="fade-up" 
+                data-aos-duration="1500">Finance Director, ABC Company</li>
+              </ul>
+            </div>
+            <!-- col 2 image -->
+            <div class="w-full lg:w-1/2 flex justify-center items-center p-8"
+            data-aos="fade-up" 
+            data-aos-duration="1500">
+              <img class="h-auto w-full object-cover object-center drop-shadow-med lazyload" data-src="img/vs_video.png"
+              alt="Testimonial video of Vena Solutions software" />
+            </div>
+          </div>
+        </section>
+        <!-- end section 2 -->
+
+        <!-- section 3 -->
+        <section>
+          <div class="flex flex-wrap align-stretch p-10">
+          <!-- col full intro text -->
+            <div class="mx-auto w-full md:w-4/5 lg:w-3/5 xl:w-3/5 flex flex-col justify-center align-center text-center p-10">
+              <h2 class="text-4xl font-serif font-bold leading-tight my-6"
+              data-aos="fade-up" 
+              data-aos-duration="1000">Turn Your Data Into a Direction.</h2>
+              <p
+              data-aos="fade-up" 
+              data-aos-duration="1200">We help your team understand your business’s shared past, present, and future so you can move forward with your shared vision.</p>
+            </div>
+          <!-- col 1 text -->
+          <div class="w-full lg:w-1/2 flex flex-col justify-center items-start p-6">
+            <a href="#slide1">
+              <div class="p-5 cursor-pointer rounded-lg bg-gray-100 transition-all duration-200 hover:shadow-lg  hover:bg-green-100" id="past"
+              data-aos="fade-up" 
+              data-aos-duration="800">
+                <h2 class="text-2xl leading-normal font-serif font-black mb-3"
+                data-aos="fade-up" 
+                data-aos-duration="800">Past</h2>
+                <p
+                data-aos="fade-up" 
+                data-aos-duration="1000">Understand and analyze your past with features like Financial Close Management, Consolidations, Tax Provisioning, Account Reconciliation, Allocations, and Intercompany Transactions.</p>
+              </div>  
+            </a>
+            <a href="#slide2">
+              <div class="p-5 cursor-pointer rounded-lg hover:shadow-lg hover:bg-green-100 transition-all duration-200" id="present">
+                <h2 class="text-2xl leading-normal font-serif font-black mb-3"
+                data-aos="fade-up" 
+                data-aos-duration="1200">Present</h2>
+                <p
+                data-aos="fade-up" 
+                data-aos-duration="1500">Position yourself for success in the present with Regulatory Reporting, Financial Reporting, Management Dashboards, and Variance Analysis.</p>
+              </div>
+            </a>
+            <a href="#slide3">
+              <div class="p-5 cursor-pointer rounded-lg hover:shadow-lg hover:bg-green-100 transition-all duration-200" id="future">
+                <h2 class="text-2xl leading-normal font-serif font-bold mb-3"
+                data-aos="fade-up" 
+                data-aos-duration="1700">Future</h2>
+                <p
+                data-aos="fade-up" 
+                data-aos-duration="2000">Forge the future of your business with advanced budgeting, planning, forecasting, and scenario modeling.</p>
+              </div>
+            </a>
+            </div>
+
+          <!-- col 2 carousel -->
+          <div class="w-full lg:w-1/2 flex justify-center items-center py-8 px-3">
+            <!-- Swiper -->
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" data-hash="slide1">
+                  <img class="w-full object-cover object-center drop-shadow-med" src="img/vs_graph2.webp" alt="Vena Solutions slide 1"/>
+                </div>
+                <div class="swiper-slide" data-hash="slide2">
+                  <img class="w-full object-cover object-center drop-shadow-med" src="img/vs_payroll.webp" alt="Vena Solutions slide 2"/>
+                </div>
+                <div class="swiper-slide" data-hash="slide3">
+                  <img class="w-full object-cover object-center drop-shadow-med" src="img/vs_planning.webp" 
+                  alt="Vena Solutions slide 3"/>
+                </div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <!-- end swiper -->
+          </div>
+        </div>
+      </section>
+      <!-- end section 3 -->
+
+      <!-- section 4 -->
+      <section>
+        <div class="flex flex-wrap align-stretch bg-gray-100 bg-cover bg-bottom" style="background-image: url('img/vs_wave.png');">
+          <!-- col 1 image -->
+          <div class="w-full lg:w-1/2 flex justify-center items-center p-8 order-last"
+          data-aos="fade-up" 
+          data-aos-duration="1600">
+            <img class="h-auto w-full object-cover object-center drop-shadow-med" src="img/vs_flow.webp" alt="Vena Solutions"/>
+          </div>
+          <!-- col 2 text -->
+          <div class="flex flex-col justify-center items-start w-full lg:w-1/2 px-20 py-6 md:py-10">
+            <p class="text-sm font-bold tracking-wide uppercase mb-0 vs-green"
+            data-aos="fade-up" 
+            data-aos-duration="1000"
+            >Risus Quam</p>
+            <h1 class="text-4xl leading-tight font-serif font-bold mb-5 mt-3"
+            data-aos="fade-up" 
+            data-aos-duration="1200">Consectetur purus sit amet fermentum.</h1>
+            <p
+            data-aos="fade-up" 
+            data-aos-duration="1500">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. </p>
+          </div>
+        </div>
+      </section>
+      <!-- end section 4 -->
+      
+      <hr class="bg-gray-100 w-3/4 mx-auto px-10" 
+      data-aos="fade-up" 
+      data-aos-duration="1000"/>
+
+      <!-- section 5 partners -->
+      <section>
+        <div class="flex min-h-full">
+          <div class="mx-auto w-full md:w-4/5 lg:w-3/5 xl:w-3/5 flex flex-col justify-center align-center text-center p-10">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold leading-tight my-6"
+            data-aos="fade-up" 
+            data-aos-duration="1200">Adipiscing Fringilla Mattis Dolor Vulputate.</h2>
+          </div> 
+        </div>
+        <!-- section 5 logos -->
+        <div class="flex flex-wrap pb-20 px-10"
+          data-aos="fade" 
+          data-aos-duration="1200">
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-center items-center px-15 py-5 md:p-15 lg:p-8">
+              <img class="w-3/4 md:w-full drop-shadow-light" src="img/vs_cloud.png" alt="Vena Solutions partner Cloud">
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-center items-center px-15 py-5 md:p-15 lg:p-8">
+              <img class="w-3/4 md:w-full drop-shadow-light" src="img/vs_fusion.png" alt="Vena Solutions partner Fusion">
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-center items-center px-15 py-5 md:p-15 lg:p-8">
+              <img class="w-3/4 md:w-full drop-shadow-light" src="img/vs_nandos.png" alt="Vena Solutions partner Nando's">
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-center items-center px-15 py-5 md:p-15 lg:p-8">
+              <img class="w-3/4 md:w-full drop-shadow-light" src="img/vs_brookfield.png" alt="Vena Solutions partner Brookfield">
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-center items-center px-15 py-5 md:p-15 lg:p-8">
+              <img class="w-3/4 md:w-full drop-shadow-light" src="img/vs_roxgold.png" alt="Vena Solutions partner Roxgold">
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-center items-center px-15 py-5 md:p-15 lg:p-8">
+              <img class="w-3/4 md:w-full drop-shadow-light" src="img/vs_paylocity.png" alt="Vena Solutions partner Paylocity">
+            </div>
+        </div>
+      </section>
+      <!-- end section 5 -->
+
+      <!-- section 6 CTA -->
+      <section>
+        <div class="flex flex-wrap align-stretch bg-gray-100 bg-no-repeat bg-cover bg-center md:bg-left text-white" style="background-image: url('img/vs_wave_sphere_green.png');"
+        >
+          <!-- col 1 text -->
+          <div class="w-full md:w-2/3 lg:w-1/2 flex flex-col justify-center items-start p-20">
+            <h2 class="text-4xl leading-tight font-serif font-bold mb-8 bg-green-800 bg-opacity-50 md:bg-opacity-25 lg:bg-opacity-0 text-shadow rounded-lg"
+            data-aos="fade-up"
+            data-aos-duration="1000">
+              Ready to start your own growth journey?
+            </h2>
+            <button type="button" class="modal-open uppercase tracking-wider font-bold text-sm bg-red-200 px-4 p-3 rounded text-green-800 hover:bg-green-500" data-modal="modal3"
+            data-aos="fade-up"
+            data-aos-duration="1200">Request Demo</button>
+            <!-- cta modal -->
+            <div id="modal3" class="modal fixed inset-0 z-50 bg-gray-900 bg-opacity-75 flex items-center justify-center p-3 pt-20 transition-all transition-100 animate__animated w-full">
+              <div class="bg-white w-full md:w-1/2 mx-auto rounded-lg overflow-hidden p-10">
+                <div class="flex justify-center">
+                  <span class="inline-flex items-center bg-green-200 bg-opacity-75 rounded-full p-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4" />
+                        <line x1="8" y1="9" x2="16" y2="9" />
+                        <line x1="8" y1="13" x2="14" y2="13" />
+                      </svg>
+                  </span>
+                </div>
+                <div class="flex flex-col items-center my-3 text-gray-800">
+                  <h1 class="font-semibold mb-2 mt-0">Get Started Today!</h1>
+                  <p class="text-sm text-center px-5">Sit voluptate non deserunt ipsum eiusmod aute.</p>
+                  <!-- form -->
+                  <div class="w-full">
+                    <form class="p-2">
+                      <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="Name">
+                          Name
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="Name" type="text" placeholder="Name">
+                      </div>
+                      <div class="mb-6">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                          Email
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email">
+                      </div>
+                    </form>
+                  </div>
+                  <!-- end form -->
+                </div>
+                <!-- modal footer -->
+                <div class="flex justify-center pb-4">
+                    <button class="px-4 bg-transparent border border-green-600 p-3 rounded-lg text-green-600 hover:text-green-100 hover:bg-green-600 mr-2" type="button">Submit</button>
+                    <button id="close3" class="modal-close px-4 bg-green-600 p-3 rounded-lg text-white hover:bg-green-500" type="button">Close</button>
+                </div>
+              </div>
+            </div>
+            <!-- end modal -->
+          </div>
+        </div>
+    </section>
+      <!-- end section 6 -->
+
+      <!-- footer -->
+      <footer>
+      <div class="flex flex-wrap py-10 px-3 bg-cover" style="background: url(img/vs_wave.webp);"
+      data-aos="fade"
+      data-aos-duration="1200">
+          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex flex-col justify-start items-start px-10 py-5 md:p-15 lg:p-5">
+            <img class="w-24 md:w-2/3 lg:w-1/2 drop-shadow-light mb-6" src="img/vs_logo2.svg" alt="Vena Solutions Logo">
+            <ul>
+              <li class="text-sm font-bold text-red-500 my-2">1-(866)-795-7125</li>
+              <li class="text-sm font-bold text-red-500 my-2">+44-207-117-2595</li>
+              <li class="text-sm font-bold text-red-500 my-2">Contact Us</li>
+            </ul>
+            <!-- nested icons grid -->
+            <div class="flex mt-3">
+              <!-- ig -->
+              <div class="w-1/4 mr-2">
+                <a href="https://www.instagram.com/venasolutions/" target=_blank> 
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="4" y="4" width="16" height="16" rx="4" />
+                    <circle cx="12" cy="12" r="3" />
+                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                  </svg>
+                </a>
+              </div>
+              <div class="w-1/4 mr-2">
+                <!-- tw -->
+                <a href="https://twitter.com/venasolutions" target=_blank> 
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                  </svg>
+                </a>
+              </div>
+              <div class="w-1/4 mr-2">
+                <!-- yt -->
+                <a href="https://www.youtube.com/user/VenaSolutions" target=_blank> 
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="3" y="5" width="18" height="14" rx="4" />
+                    <path d="M10 9l5 3l-5 3z" />
+                  </svg>
+                </a>
+              </div>
+              <div class="w-1/4">
+                <!-- fb -->
+                <a href="https://www.facebook.com/venasolutions" target=_blank> 
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- footer solutions -->
+          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-start items-start px-10 py-5 md:p-15 lg:p-5">
+            <ul>
+              <li class="text-lg font-bold text-green-800 mb-3">Solutions</li>
+              <li>Agile Planning and Reporting</li>
+              <li>Financial Management</li>
+              <li>Account Reconciliation</li>
+              <li>Data Management and Reporting</li>
+              <li>Regulatory Reporting</li>
+            </ul>
+          </div>
+          <!-- footer customers -->
+          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-start items-start px-10 py-5 md:p-15 lg:p-5">
+            <ul>
+              <li class="text-lg font-bold text-green-800 mb-3">Customers</li>
+              <li>Vena Learning</li>
+              <li>Customer Success</li>
+              <li>Training & Education</li>
+              <li>Professional Services</li>
+              <li>Contact Support</li>
+            </ul>
+          </div>
+          <!-- footer partners -->
+          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-start items-start px-10 py-5 md:p-15 lg:p-5">
+            <ul>
+              <li class="text-lg font-bold text-green-800 mb-3">Partners</li>
+              <li>Become a Partner</li>
+              <li>Find a Partner</li>
+            </ul>
+          </div>
+          <!-- footer resources -->
+          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-start items-start px-10 py-5 md:p-15 lg:p-5">
+            <ul>
+              <li class="text-lg font-bold text-green-800 mb-3">Resources</li>
+              <li>Customer Stories</li>
+              <li>Video Testimonials</li>
+              <li>On-Demand Videos</li>
+              <li>eBooks</li>
+              <li>Analyst Reports</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+          <!-- footer About -->
+          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 flex justify-start items-start px-10 py-5 md:p-15 lg:p-5">
+            <ul>
+              <li class="text-lg font-bold text-green-800 mb-3">About</li>
+              <li>Why Vena?</li>
+              <li>Our Company</li>
+              <li>Meet The Team</li>
+              <li>Vena Newsroom</li>
+              <li>Careers</li>
+              <li>Contact Us</li>
+              <li>Vena Nation Week</li>
+              <li>Network for Women</li>
+            </ul>
+          </div>
+        </div>
+        <!-- footer nav -->
+        <ul class="flex justify-start align-start bg-gray-100 w-full px-10 py-3 font-med">
+          <li class="mr-2 cursor-pointer text-xs md:text-sm">&copy; 2020 Vena Solutions. All Rights Reserved.</li>  
+          <li class="d-flex ml-auto mr-6 cursor-pointer text-xs md:text-sm">Copyright.</li>
+          <li class="mr-2 cursor-pointer text-xs md:text-sm">Privacy Policy.</li>  
+        </ul>
+      </footer>
+      <!-- end footer -->
+
+      <!-- nav mobile cta modal4 -->
+      <div id="modal4" class="modal fixed inset-0 z-50 bg-gray-900 bg-opacity-75 flex items-center justify-center p-3 pt-20 transition-all transition-100 w-full h-full">
+        <div class="bg-white w-full md:w-1/2 mx-auto rounded-lg overflow-hidden p-10">
+            <div class="flex justify-center">
+                <span class="inline-flex items-center bg-green-200 bg-opacity-75 rounded-full p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud-download" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M19 18a3.5 3.5 0 0 0 0 -7h-1a5 4.5 0 0 0 -11 -2a4.6 4.4 0 0 0 -2.1 8.4" />
+                      <line x1="12" y1="13" x2="12" y2="22" />
+                      <polyline points="9 19 12 22 15 19" />
+                    </svg>
+                </span>
+            </div>
+            <div class="flex flex-col items-center my-3">
+                <h1 class="font-semibold mb-2 mt-0">Request a Demo!</h1>
+                <p class="text-sm text-center px-5">Magna veniam commodo exercitation occaecat amet commodo qui minim occaecat ad ullamco tempor.</p>
+                <!-- form -->
+                <div class="w-full">
+                    <form class="p-2">
+                      <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="Name">
+                          Name
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="Name" type="text" placeholder="Name">
+                      </div>
+                      <div class="mb-6">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                          Email
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email">
+                      </div>
+                    </form>
+                </div>
+                <!-- end form -->
+            </div>
+            <!-- modal footer -->
+            <div class="flex justify-center pb-4">
+                <button class="px-4 bg-transparent border border-green-600 p-3 rounded-lg text-green-600 hover:text-green-100 hover:bg-green-600 mr-2" type="button">Submit</button>
+                <button id="close4" class="modal-close px-4 bg-green-600 p-3 rounded-lg text-white hover:bg-green-500" type="button">Close</button>
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
+
+
 
   </main>
 </div>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
