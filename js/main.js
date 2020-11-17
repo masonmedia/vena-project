@@ -1,61 +1,62 @@
-AOS.init({
-    easing: 'ease-in-out-back',
-    offset: 0,
-});
-
-(function () {  
-    var modalBtns = document.querySelectorAll('.modal-open');
-    // open buttons
-    modalBtns.forEach(function(btn) {
-        btn.onclick = function() {
-            let modal = btn.getAttribute('data-modal');
-            document.getElementById(modal).style.display = 'block';
-        }
+window.onload = function () {
+    AOS.init({
+        easing: 'ease-in-out-back',
+        offset: 0,
     });
-    // close buttons
-    var closeBtns = document.querySelectorAll('.modal-close');
-    closeBtns.forEach(function(btn) {
-        btn.onclick = function() {
-            let modal = btn.closest('.modal').style.display = 'none';
-        }
-    })
-    // close modals clicking anywhere on body
-    window.onclick = function(e){
-        if(e.target.classList.contains('modal')){
-            e.target.style.display = 'none';
-        }
-    };
-}());
 
-// navToggle
+    (function () {  
+        var modalBtns = document.querySelectorAll('.modal-open');
+        // open buttons
+        modalBtns.forEach(function(btn) {
+            btn.onclick = function() {
+                let modal = btn.getAttribute('data-modal');
+                document.getElementById(modal).style.display = 'block';
+            }
+        });
+        // close buttons
+        var closeBtns = document.querySelectorAll('.modal-close');
+        closeBtns.forEach(function(btn) {
+            btn.onclick = function() {
+                let modal = btn.closest('.modal').style.display = 'none';
+            }
+        })
+        // close modals clicking anywhere on body
+        window.onclick = function(e){
+            if(e.target.classList.contains('modal')){
+                e.target.style.display = 'none';
+            }
+        };
+    }());
 
-(function () {
-    const btn = document.getElementById('menuBtn');
-    const nav = document.getElementById('menu');
+    // navToggle
 
-    btn.addEventListener('click', function() {
-    nav.classList.toggle('menu');
-    })
-  }());
+    (function () {
+        const btn = document.getElementById('menuBtn');
+        const nav = document.getElementById('menu');
 
-// swiper init
+        btn.addEventListener('click', function() {
+        nav.classList.toggle('menu');
+        })
+    }());
 
-var swiper = new Swiper('.swiper-container', {
-    spaceBetween: 30,
-    hashNavigation: {
-        watchState: true,
-    },
-    speed: 800,
-        loop: true,
-    //   effect: 'fade',
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+    // swiper init
+
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        hashNavigation: {
+            watchState: true,
+        },
+        speed: 800,
+            loop: true,
+        //   effect: 'fade',
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
     });
     
     // carousel active
@@ -77,9 +78,4 @@ var swiper = new Swiper('.swiper-container', {
         slide1.classList.remove('bg-green-100');
         slide3.classList.toggle('bg-blue-100');
     })
-
-    
-
-
-            
-
+}
