@@ -7,14 +7,14 @@ lazyload();
 
 (function () {  
     var modalBtns = document.querySelectorAll('.modal-open');
-
+    // open buttons
     modalBtns.forEach(function(btn) {
         btn.onclick = function() {
             let modal = btn.getAttribute('data-modal');
             document.getElementById(modal).style.display = 'block';
         }
     });
-
+    // close buttons
     var closeBtns = document.querySelectorAll('.modal-close');
     closeBtns.forEach(function(btn) {
         btn.onclick = function() {
@@ -29,7 +29,7 @@ lazyload();
     };
 }());
 
-// navToggle();
+// navToggle
 
 (function () {
     const btn = document.getElementById('menuBtn');
@@ -60,23 +60,24 @@ var swiper = new Swiper('.swiper-container', {
     },
     });
     
+    // carousel active
     const slide1 = document.getElementById('past');
     slide1.addEventListener('click', function() {
-        slide1.classList.toggle('bg-gray-100');
-        slide2.classList.remove('bg-gray-100');
-        slide3.classList.remove('bg-gray-100');
+        slide1.classList.toggle('bg-green-100');
+        slide2.classList.remove('bg-red-100');
+        slide3.classList.remove('bg-blue-100');
     })
     const slide2 = document.getElementById('present');
     slide2.addEventListener('click', function() {
-        slide2.classList.toggle('bg-gray-100');
-        slide1.classList.remove('bg-gray-100');
-        slide3.classList.remove('bg-gray-100');
+        slide2.classList.toggle('bg-red-100');
+        slide1.classList.remove('bg-green-100');
+        slide3.classList.remove('bg-blue-100');
     })
     const slide3 = document.getElementById('future');
     slide3.addEventListener('click', function() {
-        slide2.classList.remove('bg-gray-100');
-        slide1.classList.remove('bg-gray-100');
-        slide3.classList.toggle('bg-gray-100');
+        slide2.classList.remove('bg-red-100');
+        slide1.classList.remove('bg-green-100');
+        slide3.classList.toggle('bg-blue-100');
     })
 
     
