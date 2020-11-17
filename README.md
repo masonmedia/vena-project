@@ -14,7 +14,7 @@ For the carousel section I made an interpretation of the assigned spec: "The fir
 
 ### CDNs
 
-I use CDNs for Tailwind, the AOS animation library, and Swiper.js carousel.  In a production build I would include hard copies and make use of the Tailwind sass extension files/libraries. 
+For speed of development I used CDNs for Tailwind, AOS animation library, and Swiper.js carousel.  In a production build I would include hard copies and make use of the Tailwind sass extension files/libraries. 
 
 ### SEO, AODA
 
