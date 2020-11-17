@@ -202,6 +202,14 @@ textarea {
     color: black;
   } */
 
+  .swiper-button-prev, 
+  .swiper-container-rtl 
+  .swiper-button-next,
+  .swiper-button-next:after, 
+  .swiper-button-prev:after {
+    color: #225D38;
+  }
+
   /* media queries */
 
   @media (max-width: 1023px) {

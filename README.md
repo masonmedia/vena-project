@@ -14,7 +14,7 @@ While it was specified that breadcrumbs were to be included in the layout, they 
 
 ### CDNs
 
-For speed of development I used CDNs for Tailwind, AOS animation library, and Swiper.js carousel.  In a production build I would include hard copies and make use of the Tailwind sass extension files/libraries. 
+For speed of development I used the CDN for Tailwind.  As noted in the docs, this is a large file and will most likely affect page load time/speed. In a production build I would include hard copies and make use of the Tailwind sass extension files/libraries. 
 
 ### SEO, AODA
 

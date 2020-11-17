@@ -17,7 +17,8 @@
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+  <link rel="stylesheet" href="css/swiper.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
@@ -226,7 +227,7 @@
     <!-- end banner -->
 
     <!-- section 1 text -->
-    <div class="flex py-10 md:py-20 min-h-full">
+    <div class="flex py-10 md:py-6 min-h-full">
       <div class="mx-auto w-full md:w-4/5 lg:w-3/5 xl:w-3/5 flex flex-col justify-center align-center text-center p-10">
         <h2 class="text-3xl md:text-4xl font-serif font-bold leading-tight my-6" data-aos="fade-up"
           data-aos-duration="1000">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</h2>
@@ -237,7 +238,7 @@
 
     <!-- section 2: video -->
     <section>
-      <div class="flex flex-wrap align-stretch bg-gray-100 bg-no-repeat bg-right bg-opacity-75 py-16"
+      <div class="flex flex-wrap align-stretch bg-gray-100 bg-no-repeat bg-right py-16"
         style="background-image: url('img/vs_sphere.webp'); background-size: 75%">
         <!-- col 1 text -->
         <div class="flex flex-col justify-center items-start w-full lg:w-1/2 p-15 lg:p-20">
@@ -257,8 +258,8 @@
     </section>
     <!-- end section 2 -->
 
-    <!-- section 3 -->
-    <section>
+    <!-- section 3: carousel -->
+    <section class="sm:hidden lg:block">
       <div class="flex flex-wrap align-stretch p-10">
         <!-- col full: intro text -->
         <div
@@ -278,7 +279,7 @@
           </a>
           <a href="#slide2">
             <div id="present" class="p-5 cursor-pointer rounded-lg hover:shadow-lg hover:bg-red-100 transition-all duration-200">
-              <h2 class="text-2xl leading-normal font-serif font-black mb-3" data-aos="fade-up"data-aos-duration="1200">Present</h2>
+              <h2 class="text-2xl leading-normal font-serif font-black mb-3" data-aos="fade-up" data-aos-duration="1200">Present</h2>
               <p data-aos="fade-up" data-aos-duration="1500">Position yourself for success in the present with Regulatory Reporting, Financial Reporting, Management Dashboards, and Variance Analysis.</p>
             </div>
           </a>
@@ -289,7 +290,6 @@
             </div>
           </a>
         </div>
-
         <!-- col 2 carousel -->
         <div class="w-full lg:w-1/2 flex justify-center items-center py-8 px-3">
           <!-- Swiper -->
@@ -311,18 +311,65 @@
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
           </div>
-          <!-- end swiper -->
+          <!-- end carousel -->
         </div>
       </div>
     </section>
     <!-- end section 3 -->
 
+
+      <!-- carousel sm responsive test -->
+      <section class="block lg:hidden">
+        <div class="mx-auto w-full md:w-4/5 lg:w-3/5 xl:w-3/5 flex flex-col justify-center align-center text-center p-10">
+          <h2 class="text-4xl font-serif font-bold leading-tight my-6" data-aos="fade-up" data-aos-duration="1000">Turn
+            Your Data Into a Direction.</h2>
+          <p data-aos="fade-up" data-aos-duration="1200">We help your team understand your business’s shared past, present, and future so you can move forward with your shared vision.</p>
+        </div>
+        <div class="w-full lg:w-1/2 flex justify-center items-center py-8 px-3">
+          <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide bg-green-100 shadow-xl rounded-lg" data-hash="slide1">
+                <div class="p-5">
+                  <h2 class="text-2xl leading-normal font-serif font-black mb-3">Past</h2>
+                  <p>Understand and analyze your past with features like Financial Close Management, Consolidations, Tax Provisioning, Account Reconciliation, Allocations, and Intercompany Transactions.</p>
+                </div>
+                <img class="w-full object-cover object-center drop-shadow-med" src="img/vs_graph2.webp"
+                  alt="Vena Solutions slide 1" />
+              </div>
+              <div class="swiper-slide bg-red-100 shadow-lg rounded-lg" data-hash="slide2">
+                <div class="p-5 cursor-pointer">
+                  <h2 class="text-2xl leading-normal font-serif font-black mb-3">Present</h2>
+                  <p>Position yourself for success in the present with Regulatory Reporting, Financial Reporting, Management Dashboards, and Variance Analysis.</p>
+                </div>
+                <img class="w-full object-cover object-center drop-shadow-med" src="img/vs_payroll.webp"
+                  alt="Vena Solutions slide 2" />
+              </div>
+              <div class="swiper-slide bg-blue-100 shadow-lg rounded-lg" data-hash="slide3">
+                <div class="p-5 cursor-pointer">
+                  <h2 class="text-2xl leading-normal font-serif font-bold mb-3">Future</h2>
+                  <p>Forge the future of your business with advanced budgeting, planning, forecasting, and scenario modeling.</p>
+                </div>
+                <img class="w-full object-cover object-center drop-shadow-med" src="img/vs_planning.webp"
+                  alt="Vena Solutions slide 3" />
+              </div>
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <!-- end swiper -->
+        </div>
+    </section>
+    <!-- end carousel responsive -->
+
     <!-- section 4 -->
     <section>
-      <div class="flex flex-wrap align-stretch bg-gray-100 bg-cover bg-bottom"
-        style="background-image: url('img/vs_wave.png');">
+      <div class="flex flex-wrap align-stretch bg-gray-100 bg-cover bg-bottom" style="background-image: url('img/vs_wave.png');">
         <!-- col 1 image -->
-        <div class="w-full lg:w-1/2 flex justify-center items-center p-8 order-last" data-aos="fade-up"
+        <div class="w-full lg:w-1/2 flex justify-center items-center p-8 order-last lg:order-first" data-aos="fade-up"
           data-aos-duration="1600">
           <img class="h-auto w-full object-cover object-center drop-shadow-med" src="img/vs_flow.webp"
             alt="Vena Solutions" />
@@ -339,6 +386,7 @@
     </section>
     <!-- end section 4 -->
 
+    <!-- divider -->
     <hr class="bg-gray-100 w-3/4 mx-auto px-10" data-aos="fade-up" data-aos-duration="1000" />
 
     <!-- section 5 partners -->
@@ -634,7 +682,8 @@
   </main>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+  <script src="js/swiper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
