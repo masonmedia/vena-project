@@ -1,16 +1,16 @@
 # Vena Solutions Mockup
 
-A template of README best practices to make your README simple to understand and easy to use.
-
-## Description
-
 A working responsive webpage mockup for Vena Solutions. The site is built from scratch using Tailwind.css, custom css, and javascript.
 
 ## Notes
 
 ### Carousel 
 
-For the carousel section I made an interpretation of the assigned spec: "The first product feature needs to be a carousel image (with 3 product screenshots). The images can be reused". From this description it was a bit difficult to know exactly what route to take for building this out - especially on a mobile device. I would not normally use a carousel in this format for a mobile layout as the images get detached from the accompanying text which isn't good for UX and ease of use. In my version, I made each of the text paragraphs on the left column clickable and correlating to an accompanying slide in the adjacent column on the right.
+For the carousel section, I built an interpretation of the assigned spec: "The first product feature needs to be a carousel image (with 3 product screenshots). The images can be reused". From this description it was a bit difficult to know exactly what route to take for building this out - especially on a mobile device. I would not normally use a carousel in this type of layout for mobile - with text on left, carousel on right - as the images get detached from the accompanying text, which isn't ideal for UX and ease of use. In my version, I made each of the text paragraphs on the left column highlighted and clickable to make them more clearly connected with the corresponding slides in the carousel.
+
+### Breadcrumbs
+
+While it was specified that breadcrumbs were to be included in the layout, they normally only exist on subpages, not on the homepage.  As such I included a "solutions" page which includes breadcrumbs in the style of Vena's current site.
 
 ### CDNs
 
