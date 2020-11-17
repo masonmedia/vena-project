@@ -3,8 +3,6 @@ AOS.init({
     offset: 0,
 });
 
-lazyload();
-
 (function () {  
     var modalBtns = document.querySelectorAll('.modal-open');
     // open buttons
