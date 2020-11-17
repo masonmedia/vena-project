@@ -26,4 +26,4 @@ I included very basic SEO and AODA tags. For production this would be more thoro
 
 ### Optimization
 
-Load speed was not optimized in this mockup, though a basic lazyload library was used to improve image loading.  Moderate cross browser testing was run using current versions of Safari, Chrome, Firefox, and Brave on Mac environment. 
+Load speed was not thoroughly optimized in this mockup, though some basic image optimizing was done to improve image loading.  Moderate cross browser testing was run using current versions of Safari, Chrome, Firefox, and Brave on Mac environment. 
