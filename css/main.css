@@ -27,11 +27,6 @@ html {
  * Customize the background color to match your design.
  */
 
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -88,8 +83,10 @@ textarea {
    ========================================================================== */
 
   body {
+    -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    animation: fadeIn .5s ease-in-out;
+    -webkit-animation: fadeIn .5s ease-in-out;
+            animation: fadeIn .5s ease-in-out;
   }
 
 /* nav */
@@ -99,7 +96,13 @@ textarea {
 }
 
 .nav-wrapper {
+  -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 @keyframes fadeIn {
@@ -114,6 +117,7 @@ textarea {
 	height: 2px;
   background-color: #000;
 	display: block;
+	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 	margin-top: 4px
 }
@@ -125,8 +129,10 @@ textarea {
 
 /* animation */
 .navbar-toggler .top-bar {
-  transform: rotate(45deg);
-  transform-origin: 10% 10%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 10% 10%;
+          transform-origin: 10% 10%;
 }
  
 .navbar-toggler .middle-bar {
@@ -134,12 +140,15 @@ textarea {
 }
  
 .navbar-toggler .bottom-bar {
-  transform: rotate(-45deg);
-  transform-origin: 10% 90%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 10% 90%;
+          transform-origin: 10% 90%;
 }
  
 .navbar-toggler.collapsed .top-bar {
-  transform: rotate(0);
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
 }
  
 .navbar-toggler.collapsed .middle-bar {
@@ -147,7 +156,8 @@ textarea {
 }
  
 .navbar-toggler.collapsed .bottom-bar {
-  transform: rotate(0);
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
 }
 
 
@@ -196,6 +206,7 @@ textarea {
   /* modals */
 
   .modal {
+    -webkit-transition: opacity 0.25s ease;
     transition: opacity 0.25s ease;
     display: none;
   }
@@ -215,10 +226,12 @@ textarea {
   /* text effects */
 
   .drop-shadow-light {
-    filter: drop-shadow(5px 5px 5px #d6d6d6);
+    -webkit-filter: drop-shadow(5px 5px 5px #d6d6d6);
+            filter: drop-shadow(5px 5px 5px #d6d6d6);
   }
   .drop-shadow-med {
-    filter: drop-shadow(5px 5px 5px darkgrey);
+    -webkit-filter: drop-shadow(5px 5px 5px darkgrey);
+            filter: drop-shadow(5px 5px 5px darkgrey);
   }
   .text-shadow {
     text-shadow: 1px 1px 5px #000;
@@ -354,7 +367,8 @@ textarea {
     background: #fff !important;
     color: #000 !important;
     /* Black prints faster */
-    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
     text-shadow: none !important;
   }
 
