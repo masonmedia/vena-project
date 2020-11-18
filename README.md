@@ -24,6 +24,8 @@ For speed of development I used the CDN for Tailwind.  As noted in the docs, thi
 
 I included very basic SEO and AODA tags. For production this would be more thoroughly tuned up.
 
-### Optimization
+### Optimization + Testing
 
-Load speed was not thoroughly optimized in this mockup, though some basic image optimizing was done to improve image loading.  Moderate cross browser testing was run using current versions of Safari, Chrome, Firefox, and Brave on Mac environment, along with core device/screen testing.
+Load speed was not thoroughly optimized in this mockup, though some basic image optimizing was done to improve image loading.  Moderate cross browser testing was run using current versions of Safari, Chrome, Firefox, and Brave on Mac environment, along with core device/screen testing. 
+
+*Some of the initial graph and browser images used in the mockup were pulled from the vena website in .webp format, which I realized later in testing - does not work in Safari. Thus they were replaced with png format for compatibility.
