@@ -1,8 +1,8 @@
 window.onload = function () {
-    AOS.init({
-        easing: 'ease-in-out-back',
-        offset: 0,
-    });
+    // AOS.init({
+    //     easing: 'ease-in-out-back',
+    //     offset: 0,
+    // });
 
     (function () {  
         var modalBtns = document.querySelectorAll('.modal-open');
@@ -78,4 +78,7 @@ window.onload = function () {
         slide1.classList.remove('bg-green-100');
         slide3.classList.toggle('bg-blue-100');
     })
-}
+    // sal animation
+    sal();
+
+}//end onload
