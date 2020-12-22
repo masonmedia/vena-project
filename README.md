@@ -1,5 +1,9 @@
 # Vena Solutions Mockup
 
+<img src="img/vena_browser_screen.png"
+     alt="decentral.ca homepage banner photo"
+     style="width: 100%; float: left; margin: 0 auto;" />
+
 A working responsive webpage mockup for Vena Solutions. The site is built from scratch using Tailwind.css, custom css, and javascript.
 
 ## Notes
