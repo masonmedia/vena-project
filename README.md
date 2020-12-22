@@ -4,7 +4,7 @@
      alt="decentral.ca homepage banner photo"
      style="width: 100%; float: left; margin: 0 auto;" />
 
-A working responsive webpage mockup for Vena Solutions. The site is built from scratch using Tailwind.css, custom css, and javascript.
+A responsive mockup for Vena Solutions. This project was a one-page website built to detailed specs based on a Figma multi-section layout including 3 popup contact forms, a carousel, and the exclusive use of Tailwind CSS. The mockup makes use of the AOS library for scroll animations.
 
 ## Notes
 
