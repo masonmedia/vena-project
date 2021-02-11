@@ -1,4 +1,6 @@
 window.onload = function () {
+
+    // init AOS animations
     AOS.init({
         easing: 'ease-in-out-back',
         offset: 0,
@@ -35,11 +37,11 @@ window.onload = function () {
         const nav = document.getElementById('menu');
 
         btn.addEventListener('click', function() {
-        nav.classList.toggle('menu');
+            nav.classList.toggle('menu');
         })
     }());
 
-    // swiper init
+    // swiper slider init
 
     var swiper = new Swiper('.swiper-container', {
         spaceBetween: 30,
@@ -47,8 +49,7 @@ window.onload = function () {
             watchState: true,
         },
         speed: 800,
-            loop: true,
-        //   effect: 'fade',
+        loop: true,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -78,7 +79,5 @@ window.onload = function () {
         slide1.classList.remove('bg-green-100');
         slide3.classList.toggle('bg-blue-100');
     })
-    // sal animation
-    // sal();
 
 }//end onload
